@@ -28,22 +28,46 @@ def load_model_weights(checkpoint_path, export_path=None):
     """
     print(f"Loading model weights from: {checkpoint_path}")
     
-    # Try to figure out the checkpoint structure
+    # Handle different types of checkpoint paths
     if os.path.isdir(checkpoint_path):
-        # Check for typical RLlib checkpoint structure
-        state_file = os.path.join(checkpoint_path, "checkpoint-0")
-        if not os.path.exists(state_file):
-            # Look for other common filenames
-            options = ["checkpoint.pt", "model.pt", "params.pkl"]
+        # If a directory is provided, try to find the policy_state.pkl file
+        if os.path.exists(os.path.join(checkpoint_path, "policies", "default_policy", "policy_state.pkl")):
+            state_file = os.path.join(checkpoint_path, "policies", "default_policy", "policy_state.pkl")
+            print(f"Found policy state file in directory: {state_file}")
+        else:
+            # Look for common checkpoint filenames
+            options = ["policy_state.pkl", "checkpoint.pt", "model.pt", "params.pkl"]
+            found = False
             for option in options:
-                if os.path.exists(os.path.join(checkpoint_path, option)):
-                    state_file = os.path.join(checkpoint_path, option)
+                potential_path = os.path.join(checkpoint_path, option)
+                if os.path.exists(potential_path):
+                    state_file = potential_path
+                    found = True
                     break
-        
-        # If still not found, try to load model directly from the directory
-        if not os.path.exists(state_file):
+            
+            if not found:
+                print(f"Warning: No model weights found in {checkpoint_path}")
+                state_file = checkpoint_path
+    elif os.path.isfile(checkpoint_path) and checkpoint_path.endswith(".json"):
+        # If a json checkpoint file is given, try to parse it to find the real weights
+        try:
+            checkpoint_dir = os.path.dirname(checkpoint_path)
+            # Check if this is the main RLlib checkpoint or policy checkpoint
+            if "default_policy" in checkpoint_dir:
+                # It's the policy checkpoint, look for policy_state.pkl in the same directory
+                state_file = os.path.join(checkpoint_dir, "policy_state.pkl")
+            else:
+                # It's the main checkpoint, look for policy directory
+                state_file = os.path.join(checkpoint_dir, "policies", "default_policy", "policy_state.pkl")
+            
+            if not os.path.exists(state_file):
+                print(f"Warning: Expected policy state file not found: {state_file}")
+                state_file = checkpoint_path
+        except Exception as e:
+            print(f"Error finding policy state from JSON: {e}")
             state_file = checkpoint_path
     else:
+        # Use the provided path directly
         state_file = checkpoint_path
         
     print(f"Loading state from: {state_file}")
@@ -96,7 +120,39 @@ def load_model_weights(checkpoint_path, export_path=None):
         
         # Try to load state directly as PyTorch state
         try:
-            state_dict = torch.load(state_file)
+            # Check if this is a JSON file
+            if state_file.endswith('.json'):
+                print(f"Detected JSON checkpoint file, trying to parse it")
+                try:
+                    with open(state_file, 'r') as f:
+                        checkpoint_info = json.load(f)
+                        
+                    # Look for the actual weights file
+                    checkpoint_dir = os.path.dirname(state_file)
+                    if 'checkpoint' in checkpoint_info:
+                        weights_path = os.path.join(checkpoint_dir, checkpoint_info['checkpoint']['value'])
+                        if os.path.exists(weights_path):
+                            print(f"Found weights file: {weights_path}")
+                            state_file = weights_path
+                        else:
+                            print(f"Referenced weights file not found: {weights_path}")
+                except Exception as e:
+                    print(f"Error parsing JSON checkpoint: {e}")
+            
+            # Now try to load the weights file
+            try:
+                # Use weights_only=False to handle the PyTorch 2.6 change
+                state_dict = torch.load(state_file, weights_only=False)
+            except Exception as e:
+                print(f"Error loading weights with weights_only=False: {e}")
+                # Try again with weights_only=True as last resort
+                try:
+                    state_dict = torch.load(state_file, weights_only=True)
+                    print("Successfully loaded weights with weights_only=True")
+                except Exception as e2:
+                    print(f"Also failed with weights_only=True: {e2}")
+                    raise
+                    
             if "worker" in state_dict:
                 # Handle RLLib nested structure
                 for key in ["worker", "state", "policy_states", "default_policy"]:
@@ -310,8 +366,18 @@ def run_replay(replay_path, checkpoint_path, output_dir="replay_analysis", expor
         return None
     
     # Get max frame from replay
-    max_frame = max(event["FrameIndex"] for event in replay_data["MissionEvents"])
-    print(f"Replay {os.path.basename(replay_path)} has {max_frame} frames")
+    try:
+        if "MissionEvents" in replay_data and replay_data["MissionEvents"]:
+            max_frame = max(event.get("FrameIndex", 0) for event in replay_data["MissionEvents"])
+            print(f"Replay {os.path.basename(replay_path)} has {max_frame} frames")
+        else:
+            print(f"Warning: No mission events found in replay {os.path.basename(replay_path)}")
+            max_frame = 0
+    except Exception as e:
+        print(f"Error determining max frame: {e}")
+        print(f"Replay file keys: {list(replay_data.keys())}")
+        print(f"First few entries: {replay_data.get('MissionEvents', [])[:3]}")
+        max_frame = 0
     
     # Create output directory
     os.makedirs(output_dir, exist_ok=True)
@@ -346,16 +412,54 @@ def run_replay(replay_path, checkpoint_path, output_dir="replay_analysis", expor
             else:
                 # If we have a direct PyTorch model
                 with torch.no_grad():
-                    input_dict = {"obs": obs}
-                    output, _ = model(input_dict, [], None)
+                    # The error is occurring in processing tensor inputs
+                    # Let's prepare the input properly
                     
-                    # Parse the output
-                    logits = output[:4]  # First 4 outputs are action logits
-                    params = output[4:].tolist()  # Remaining are the continuous params
+                    # Convert numpy arrays to tensors
+                    input_obs = {}
+                    for key, value in obs.items():
+                        if key == "visibility":
+                            input_obs[key] = {
+                                "legacy": torch.tensor(value["legacy"], dtype=torch.float32).unsqueeze(0),
+                                "dynasty": torch.tensor(value["dynasty"], dtype=torch.float32).unsqueeze(0)
+                            }
+                        elif key == "entity_id_list":
+                            # Handle this differently - keep as numpy for now
+                            input_obs[key] = value
+                        else:
+                            # For other arrays, convert to tensor and add batch dimension
+                            try:
+                                input_obs[key] = torch.tensor(value, dtype=torch.float32).unsqueeze(0)
+                            except Exception as e:
+                                print(f"Error converting {key} to tensor: {e}")
+                                # Use a dummy tensor as fallback
+                                if key == "entities":
+                                    input_obs[key] = torch.zeros((1, 100, 26), dtype=torch.float32)
+                                elif key == "mission":
+                                    input_obs[key] = torch.zeros((1, 7), dtype=torch.float32)
+                                elif key == "controllable_entities":
+                                    input_obs[key] = torch.zeros((1, 100), dtype=torch.float32)
+                                elif key == "valid_engage_mask":
+                                    input_obs[key] = torch.zeros((1, 100, 100), dtype=torch.float32)
                     
-                    # Get the most likely action
-                    action_type = torch.argmax(logits).item()
-                    action = [action_type] + params
+                    # Create input_dict
+                    input_dict = {"obs": input_obs}
+                    
+                    try:
+                        output, _ = model(input_dict, [], None)
+                        
+                        # Parse the output
+                        logits = output[:4]  # First 4 outputs are action logits
+                        params = output[4:].tolist()  # Remaining are the continuous params
+                        
+                        # Get the most likely action
+                        action_type = torch.argmax(logits).item()
+                        action = [action_type] + params
+                    except Exception as e:
+                        print(f"Error during model inference: {e}")
+                        # Default to NoOp action as fallback
+                        action_type = 0
+                        action = [action_type] + [0.0] * 10
             
             action_names = {
                 0: "NoOp",
@@ -413,11 +517,14 @@ def run_replay(replay_path, checkpoint_path, output_dir="replay_analysis", expor
 # CONFIGURATION PARAMETERS - Edit these values directly instead of using CLI args
 # ============================================================================
 
-# Path to the replay file you want to analyze
-REPLAY_PATH = "Replays/22-04-2025 14-36-02.json"
+# Path to the replay file you want to analyze (try different files if one doesn't have frames)
+REPLAY_PATH = "Replays/22-04-2025 14-37-21.json"  # Try this one with more frames
 
-# Path to the model checkpoint - look for a checkpoint in the ray_results directory
-CHECKPOINT_PATH = "ray_results/rewardshape_flag_frenzy_ppo/PPO_FlagFrenzyEnv-v0_74231_00000_0_2025-04-22_13-51-44/checkpoint_000009"
+# Path to the model checkpoint - this should point to the policy_state.pkl file which contains the actual model weights
+CHECKPOINT_PATH = "ray_replay/flag_frenzy_ppo/PPO_FlagFrenzyEnv-v0_26b0e_00000_0_2025-04-19_09-13-57/checkpoint_000029/policies/default_policy/policy_state.pkl"
+
+# Try these replay files that might have more frames
+# REPLAY_PATH = "Replays/22-04-2025 14-37-21.json" 
 
 # Output directory for analysis results
 OUTPUT_DIR = "replay_analysis"

@@ -1,0 +1,28 @@
+{
+  "checkpoint": "ray_replay/flag_frenzy_ppo/PPO_FlagFrenzyEnv-v0_26b0e_00000_0_2025-04-19_09-13-57/checkpoint_000029",
+  "replay_path": "Replays/27-04-2025 04-22-28.json",
+  "results": {
+    "replay_path": "Replays/27-04-2025 04-22-28.json",
+    "frames_evaluated": 1,
+    "actions": [
+      {
+        "frame": 0,
+        "action_type": 2,
+        "action_name": "ReturnToBase",
+        "params": [
+          1.0,
+          -1.0,
+          1.0,
+          -1.0,
+          1.0,
+          -1.0,
+          1.0,
+          1.0,
+          1.0,
+          -1.0
+        ],
+        "events_in_frame": 17
+      }
+    ]
+  }
+}

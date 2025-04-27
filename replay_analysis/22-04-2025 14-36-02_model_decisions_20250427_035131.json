@@ -1,0 +1,6 @@
+{
+  "replay_path": "Replays/22-04-2025 14-36-02.json",
+  "model_checkpoint": "ray_results/rewardshape_flag_frenzy_ppo/PPO_FlagFrenzyEnv-v0_74231_00000_0_2025-04-22_13-51-44/checkpoint_000009",
+  "timestamp": "20250427_035131",
+  "decisions": []
+}

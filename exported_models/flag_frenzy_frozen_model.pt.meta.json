@@ -1,0 +1,30 @@
+{
+  "source_checkpoint": "ray_replay/flag_frenzy_ppo/PPO_FlagFrenzyEnv-v0_3e8ff_00000_0_2025-04-19_09-14-37/checkpoint_000029/rllib_checkpoint.json",
+  "export_date": "2025-04-27T03:57:03.462168",
+  "frozen": true,
+  "inference_only": true,
+  "input_shape": {
+    "entities": [
+      100,
+      26
+    ],
+    "mission": [
+      7
+    ],
+    "visibility": {
+      "legacy": [
+        100
+      ],
+      "dynasty": [
+        100
+      ]
+    },
+    "controllable_entities": [
+      100
+    ]
+  },
+  "output_shape": {
+    "action_type": 4,
+    "params": 10
+  }
+}

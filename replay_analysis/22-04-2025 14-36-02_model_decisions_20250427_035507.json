@@ -1,0 +1,22 @@
+{
+  "replay_path": "Replays/22-04-2025 14-36-02.json",
+  "model_checkpoint": "ray_replay/flag_frenzy_ppo/PPO_FlagFrenzyEnv-v0_3e8ff_00000_0_2025-04-19_09-14-37/checkpoint_000029/rllib_checkpoint.json",
+  "timestamp": "20250427_035507",
+  "decisions": [
+    {
+      "frame": 0,
+      "action_type": 20,
+      "action_name": "Unknown_20",
+      "parameters": [],
+      "entity_ids_present": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ]
+}
