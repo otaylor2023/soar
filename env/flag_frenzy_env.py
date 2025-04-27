@@ -193,7 +193,7 @@ class FlagFrenzyEnv(Env):
                 replays_dir = "Replays"
 
                 if not os.path.exists(replays_dir):
-                    os.makedirs(replays_dir)
+                    os.makedirs(replays_dir, exist_ok=True)
 
                 replay_file_name = f"{replays_dir}/{datetime_now}.json"
 
@@ -441,7 +441,7 @@ class FlagFrenzyEnv(Env):
         """
         Computes the reward based on the mission status vector M.
         Mission status vector (M) format:
-        [Flag Alive, B1 Alive, AWACS Alive, MADDOG Alive, B1 Returned, MADDOG Returned, Time]
+        (Flag Alive, B1 Alive, AWACS Alive, MADDOG Alive, B1 Returned, MADDOG Returned, Time)
         Blue team wins if:
             - Flagship is neutralized (Flag Alive == 0),
             - B1 is alive,
