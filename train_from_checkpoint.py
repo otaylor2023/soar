@@ -81,8 +81,12 @@ def main():
     parser.add_argument('--experiment-name', type=str, help='Name for the experiment', default="flag_frenzy_ppo")
     args = parser.parse_args()
 
-    # Initialize Ray
-    ray.init(ignore_reinit_error=True)
+    # Initialize Ray with logging configuration
+    ray.init(
+        ignore_reinit_error=True,
+        logging_level=0,  # Most verbose logging
+        log_to_driver=True,  # Ensure logs are sent to the driver
+    )
 
     if args.checkpoint_path and os.path.exists(args.checkpoint_path):
         print(f"Restoring from checkpoint: {args.checkpoint_path}")
@@ -93,6 +97,9 @@ def main():
         # Update the config with new parameters
         config["num_rollout_workers"] = args.num_workers
         config["num_gpus"] = args.num_gpus
+        # Ensure logs are not filtered
+        config["log_level"] = "DEBUG"
+        config["log_sys_usage"] = True
         # Stop the temporary algorithm
         algo.stop()
         # Create new algorithm with updated config
@@ -102,6 +109,8 @@ def main():
             print(f"Warning: Checkpoint path {args.checkpoint_path} does not exist")
         # Create new PPO instance with fresh config
         config = get_ppo_config(num_workers=args.num_workers, num_gpus=args.num_gpus)
+        config["log_level"] = "DEBUG"
+        config["log_sys_usage"] = True
         algo = PPO(config=config)
 
     # Train for specified number of iterations
@@ -113,16 +122,32 @@ def main():
         policy = algo.get_policy()
         model = policy.model
         
-        # Get and print attributions from the last batch
+        # Force print attributions with more detail
         if hasattr(model, 'get_last_attribution'):
+            print("\n" + "="*50)
+            print(f"ITERATION {i} ATTRIBUTIONS:")
+            print("="*50)
             attributions = model.get_last_attribution()
             if attributions:
+                print(f"\nNumber of attributions: {len(attributions)}")
                 print("\nSample decisions from this iteration:")
                 # Print first 3 attributions from the batch
                 for j, attribution in enumerate(attributions[:3]):
-                    print(f"\nDecision {j+1}:")
-                    explanation = model.format_explanation(attribution)
-                    print(explanation)
+                    print(f"\nDecision {j+1}:" + "="*30)
+                    try:
+                        explanation = model.format_explanation(attribution)
+                        print(explanation)
+                        # Also print raw attribution data for debugging
+                        print("\nRaw attribution data:")
+                        print(f"Action type: {attribution.get('action_type', 'N/A')}")
+                        print(f"Number of entities: {len(attribution.get('entities', {}))}")
+                        if 'target_analysis' in attribution:
+                            print(f"Target analysis: {attribution['target_analysis']}")
+                    except Exception as e:
+                        print(f"Error formatting attribution {j}: {str(e)}")
+            else:
+                print("No attributions available for this iteration")
+            print("="*50 + "\n")
         
         # Save checkpoint every 15 iterations
         if i % 15 == 0:
