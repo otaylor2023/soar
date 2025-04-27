@@ -7,6 +7,7 @@ from ray.rllib.models import ModelCatalog
 from models.model import CustomModel
 from models.hybrid_action_dist import HybridActionDistribution
 from env.flag_frenzy_env import FlagFrenzyEnv
+import datetime
 
 # Register model and action distribution
 ModelCatalog.register_custom_model("flag_frenzy_model", CustomModel)
@@ -101,7 +102,7 @@ def create_entity_features(event):
     
     return features
 
-def evaluate_replay(replay_path, checkpoint_path):
+def evaluate_replay(replay_path, checkpoint_path, log_dir="evaluation_logs"):
     """Evaluate model decisions on a replay file."""
     # Load replay data
     with open(replay_path, 'r') as f:
@@ -116,27 +117,84 @@ def evaluate_replay(replay_path, checkpoint_path):
     print(f"Evaluating replay: {os.path.basename(replay_path)}")
     print(f"Total frames: {max_frames}")
     
-    for frame in range(max_frames + 1):
-        # Convert replay state to observation
-        obs = process_replay_state(replay_data, frame)
+    # Create logs directory if it doesn't exist
+    os.makedirs(log_dir, exist_ok=True)
+    
+    # Create log file with timestamp
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    replay_name = os.path.splitext(os.path.basename(replay_path))[0]
+    log_file = os.path.join(log_dir, f"{replay_name}_eval_{timestamp}.log")
+    
+    with open(log_file, 'w') as log:
+        log.write(f"Evaluation of {replay_path}\n")
+        log.write(f"Using model checkpoint: {checkpoint_path}\n")
+        log.write(f"Total frames: {max_frames}\n")
+        log.write(f"Timestamp: {timestamp}\n")
+        log.write("-" * 80 + "\n\n")
         
-        # Get model's action
-        action = algo.compute_single_action(
-            observation=obs,
-            explore=False  # Deterministic evaluation
-        )
-        
-        # Parse action
-        action_type = action[0]  # Discrete action type
-        params = action[1:]      # Continuous parameters
-        
-        # Print interesting actions (e.g., engagements)
-        if action_type == 3:  # Engage action
-            target_idx = np.argmax(params[1:100])  # First param is source
-            print(f"Frame {frame}: Model would engage entity {obs['entity_id_list'][target_idx]}")
+        for frame in range(max_frames + 1):
+            # Convert replay state to observation
+            obs = process_replay_state(replay_data, frame)
+            
+            # Get model's action
+            action = algo.compute_single_action(
+                observation=obs,
+                explore=False  # Deterministic evaluation
+            )
+            
+            # Parse action
+            action_type = action[0]  # Discrete action type
+            params = action[1:]      # Continuous parameters
+            
+            # Map action type to name for better readability
+            action_names = {
+                0: "NoOp",
+                1: "Move",
+                2: "MoveFormation",
+                3: "Engage",
+                4: "FollowPath"
+            }
+            action_name = action_names.get(action_type, f"Unknown_{action_type}")
+            
+            # Log frame, action type and parameters
+            log_entry = f"Frame {frame}: Action={action_name} "
+            
+            # Add specific details based on action type
+            if action_type == 3:  # Engage action
+                target_idx = np.argmax(params[1:100])  # First param is source
+                entity_id = -1
+                target_id = -1
+                if len(obs['entity_id_list']) > 0:
+                    entity_id = obs['entity_id_list'][0]  # First entity is source
+                if len(obs['entity_id_list']) > target_idx:
+                    target_id = obs['entity_id_list'][target_idx]
+                log_entry += f"Source={entity_id} Target={target_id}"
+                print(f"Frame {frame}: Model would engage entity {target_id}")
+            elif action_type == 1:  # Move action
+                dest_x, dest_y = params[0], params[1]
+                log_entry += f"Destination=({dest_x:.2f}, {dest_y:.2f})"
+            
+            # Write to log file
+            log.write(log_entry + "\n")
+            
+            # Find and log events that occurred in this frame
+            frame_events = [event for event in replay_data["MissionEvents"] if event["FrameIndex"] == frame]
+            if frame_events:
+                log.write(f"  Events in frame {frame}:\n")
+                for event in frame_events:
+                    event_type = event.get("EventName", "Unknown")
+                    entity_id = event.get("EntityId", -1)
+                    log.write(f"  - {event_type} (EntityId: {entity_id})\n")
+            
+            # Add separator between frames for readability
+            if frame_events:
+                log.write("\n")
+    
+    print(f"Evaluation log saved to: {log_file}")
+    return log_file
 
 if __name__ == "__main__":
     # Example usage
-    replay_path = "Replays/18-04-2025 20-23-49.json"
+    replay_path = "Replays/22-04-2025 14-30-18.json"
     checkpoint_path = "ray_results/rewardshape_flag_frenzy_ppo/PPO_FlagFrenzyEnv-v0_74231_00000_0_2025-04-22_13-51-44/checkpoint_000009"
     evaluate_replay(replay_path, checkpoint_path)
