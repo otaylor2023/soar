@@ -32,17 +32,9 @@ config = (
     PPOConfig()
     .environment(env="FlagFrenzyEnv-v0", env_config={})
     .framework("torch")
-    .rollouts(
-        num_rollout_workers=24,
-        num_envs_per_worker=1,
-        rollout_fragment_length="auto",
-    )
     .training(
         model={
             "custom_model": "flag_frenzy_model",
-            "custom_action_dist": "hybrid_action_dist",
-            "vf_share_layers": False,
-            # ICM configuration
             "custom_model_config": {
                 "use_curiosity": True,
                 "feature_dim": 288,
@@ -51,7 +43,14 @@ config = (
                 "curiosity_lr": 0.0005,
                 "curiosity_weight": 0.05,  # Weight for intrinsic rewards
                 "forward_loss_weight": 0.2,  # Weight between forward and inverse dynamics losses
-            }
+                "enable_attribution": True,  # Enable gradient attribution
+                "attribution_config": {
+                    "num_samples": 50,  # Number of samples for integrated gradients
+                    "internal_batch_size": 1  # Batch size for attribution computation
+                }
+            },
+            "custom_action_dist": "hybrid_action_dist",
+            "vf_share_layers": False,
         },
         gamma=0.995,
         lambda_=0.95,
@@ -63,6 +62,11 @@ config = (
         sgd_minibatch_size=128,
         num_sgd_iter=10,
         lr=3e-5,
+    )
+    .rollouts(
+        num_rollout_workers=24,
+        num_envs_per_worker=1,
+        rollout_fragment_length="auto",
     )
     .resources(num_gpus=1)
     .experimental(_enable_new_api_stack=False)

@@ -5,6 +5,9 @@ from datetime import datetime
 import os
 import numpy as np
 from typing import Dict, Any, List
+import time
+from collections import deque
+from datetime import datetime, timedelta
 
 class LLMInterpreter:
     def __init__(self, api_key: str):
@@ -13,7 +16,32 @@ class LLMInterpreter:
         self.context_window = []
         self.max_context_steps = 5
         self.replay_data = []
+        self.interpretations = []
+        self.current_episode = 0
+        # Rate limiting
+        self.request_timestamps = deque(maxlen=5)  # Keep track of last 5 request times
+        self.requests_per_minute = 5
         
+    def _wait_for_rate_limit(self):
+        """Ensure we don't exceed rate limit by waiting if necessary."""
+        now = datetime.now()
+        
+        # Remove timestamps older than 1 minute
+        while self.request_timestamps and (now - self.request_timestamps[0]) > timedelta(minutes=1):
+            self.request_timestamps.popleft()
+        
+        # If we've made 5 requests in the last minute, wait until we can make another
+        if len(self.request_timestamps) >= self.requests_per_minute:
+            # Calculate how long to wait
+            oldest_request = self.request_timestamps[0]
+            wait_time = (oldest_request + timedelta(minutes=1) - now).total_seconds()
+            if wait_time > 0:
+                print(f"Rate limit reached. Waiting {wait_time:.1f} seconds...")
+                time.sleep(wait_time)
+        
+        # Record this request
+        self.request_timestamps.append(now)
+
     def _format_entity_state(self, entity_data: Dict[str, Any]) -> str:
         """Format entity state information into readable text."""
         entity_types = {0: "B1", 1: "AWACS", 2: "MADDOG"}
@@ -150,6 +178,7 @@ Please provide:
 4. Recommendations: Potential improvements or alternatives"""
 
         # Get Claude's interpretation
+        self._wait_for_rate_limit()
         response = self.claude.messages.create(
             model="claude-3-opus-20240229",
             messages=[{"role": "user", "content": prompt}]
@@ -190,3 +219,171 @@ Please provide:
             }, f, indent=2)
         
         print(f"Saved interpreted replay to: {replay_path}")
+
+    def _format_entity_info(self, entity) -> str:
+        """Format entity information into a readable string."""
+        try:
+            entity_type = entity.type if hasattr(entity, 'type') else 'Unknown'
+            entity_id = entity.id if hasattr(entity, 'id') else 'Unknown'
+            position = entity.position if hasattr(entity, 'position') else [0, 0, 0]
+            health = entity.health if hasattr(entity, 'health') else 0
+            
+            return (f"Entity {entity_id} ({entity_type}):\n"
+                   f"  Position: ({position[0]:.1f}, {position[1]:.1f}, {position[2]:.1f})\n"
+                   f"  Health: {health:.1f}")
+        except (AttributeError, IndexError):
+            return f"Entity (incomplete information)"
+
+    def _format_state(self, env, obs: Dict[str, Any]) -> str:
+        """Format the current state into a readable description."""
+        state_desc = []
+        
+        if "entities" in obs and "entity_id_list" in obs:
+            state_desc.append("=== Entities ===")
+            entity_id_list = obs["entity_id_list"]
+            
+            # Make sure we only process valid entities
+            num_entities = min(len(obs["entities"]), len(entity_id_list))
+            
+            for entity_idx in range(num_entities):
+                try:
+                    entity_id = int(entity_id_list[entity_idx])
+                    if entity_id in env.entities:
+                        entity = env.entities[entity_id]
+                        state_desc.append(self._format_entity_info(entity))
+                except (ValueError, IndexError, KeyError, AttributeError):
+                    continue
+        
+        if not state_desc:
+            state_desc = ["No entity information available"]
+            
+        return "\n".join(state_desc)
+
+    def _format_attribution(self, attribution_dict, env):
+        """Format attribution information into readable text."""
+        if not attribution_dict or not isinstance(attribution_dict, dict):
+            return "No attribution information available."
+
+        formatted_text = []
+        for action_type, attributions in attribution_dict.items():
+            if not attributions or not isinstance(attributions, (list, tuple)) or len(attributions) == 0:
+                continue
+                
+            # Get entity attributions for this action
+            try:
+                entity_attributions = np.array(attributions[0], dtype=np.float32)
+            except (ValueError, TypeError, IndexError):
+                continue
+
+            # Sort entities by absolute attribution value
+            entity_indices = np.argsort(np.abs(entity_attributions))[::-1][:3]  # Top 3 entities
+            
+            # Format top influential entities
+            top_entities = []
+            for entity_idx in entity_indices:
+                attr_value = entity_attributions[entity_idx]
+                if abs(attr_value) > 0.01:  # Only include significant influences
+                    try:
+                        entity_id = int(env.entity_id_list[entity_idx])
+                        entity = env.entities[entity_id]
+                        entity_type = entity.type if hasattr(entity, 'type') else 'Unknown'
+                        influence = "positive" if attr_value > 0 else "negative"
+                        top_entities.append(f"{entity_type} (influence: {influence}, strength: {abs(attr_value):.3f})")
+                    except (IndexError, KeyError, AttributeError):
+                        continue
+
+            if top_entities:
+                action_name = self._get_action_type_string(action_type)
+                formatted_text.append(f"Action {action_name} was most influenced by: {', '.join(top_entities)}")
+
+        return "\n".join(formatted_text) if formatted_text else "No significant attributions found."
+
+    def interpret_flag_frenzy_action(self, env, action: Dict[str, Any], attribution_dict: Dict[str, List[float]], obs: Dict[str, Any]) -> str:
+        """Interpret an action taken by the agent with its attribution."""
+        try:
+            # Format the current state and action information
+            state_desc = self._format_state(env, obs)
+            action_desc = self._format_action(action)
+            attribution_desc = self._format_attribution(attribution_dict, env)
+            
+            # Create the prompt for Claude
+            prompt = f"""Current State:
+{state_desc}
+
+Action Taken:
+{action_desc}
+
+Attribution Analysis:
+{attribution_desc}
+
+Based on the above information, provide a brief tactical analysis of the agent's decision. Focus on:
+1. Why this action was chosen
+2. Which entities influenced the decision most
+3. Whether this appears to be a good tactical choice"""
+
+            # Make the API call with required parameters
+            response = self.claude.messages.create(
+                model="claude-3-opus-20240229",
+                max_tokens=1000,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ]
+            )
+            
+            # Extract and return the response content
+            return response.content[0].text if response and response.content else "Unable to generate interpretation."
+            
+        except Exception as e:
+            return f"Error interpreting action: {str(e)}"
+
+    def start_new_episode(self):
+        """Start tracking a new episode by clearing previous interpretations."""
+        self.interpretations = []
+        self.current_episode += 1
+        
+    def save_episode_interpretations(self, output_dir):
+        """Save the current episode's interpretations to a JSON file."""
+        os.makedirs(output_dir, exist_ok=True)
+        
+        output_file = os.path.join(output_dir, f"episode_{self.current_episode}_interpretations.json")
+        with open(output_file, "w") as f:
+            json.dump({
+                "episode": self.current_episode,
+                "timestamp": datetime.now().isoformat(),
+                "num_steps": len(self.interpretations),
+                "interpretations": self.interpretations
+            }, f, indent=2)
+        
+        return output_file
+
+    def save_flag_frenzy_replay(self, replay_path: str):
+        """Save the current context window to a replay file."""
+        if not self.context_window:
+            return
+            
+        with open(replay_path, 'w') as f:
+            for step in self.context_window:
+                f.write(f"Step {step['step']}\n")
+                f.write(f"Action: {step['action']}\n")
+                f.write(f"Interpretation: {step['interpretation']}\n\n")
+
+    def _get_action_type_string(self, action_type: int) -> str:
+        action_types = {0: "NO-OP", 1: "MOVE", 2: "RTB", 3: "ENGAGE"}
+        return action_types.get(action_type, "UNKNOWN")
+
+    def _format_action_params(self, action_type: int, params: List[float]) -> str:
+        if action_type == 1:  # MOVE
+            return f"({params[0]:.1f}, {params[1]:.1f})"
+        elif action_type == 3:  # ENGAGE
+            return f"Target ID: {int(params[0])}, Parameters: {params[1:]}"
+        else:
+            return ""
+
+    def _format_action(self, action: Dict[str, Any]) -> str:
+        action_type = action["action_type"]
+        action_name = self._get_action_type_string(action_type)
+        param_desc = self._format_action_params(action_type, action["params"])
+        return f"{action_name} with parameters {param_desc}"

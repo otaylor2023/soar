@@ -12,6 +12,8 @@ from datetime import datetime
 import os
 import numpy as np
 import argparse
+from utils import format_explanation
+from llm_interpreter import LLMInterpreter
 
 def convert_to_json_serializable(obj):
     if isinstance(obj, (np.integer, np.int32, np.int64)):
@@ -57,7 +59,15 @@ def get_action_type_string(action):
     }
     return action_types.get(action_type, "UNKNOWN")
 
-def evaluate_model(checkpoint_path, model_type="ppo", num_episodes=5):
+def evaluate_model(checkpoint_path, model_type="ppo", num_episodes=1, interpret=False):
+    """Evaluate a trained model.
+    
+    Args:
+        checkpoint_path: Path to the model checkpoint
+        model_type: Type of model to evaluate (ppo, appo, or curious)
+        num_episodes: Number of episodes to evaluate
+        interpret: Whether to use LLM interpretation of actions
+    """
     # Register environment and models
     register_env("FlagFrenzyEnv-v0", env_creator)
     ModelCatalog.register_custom_model("flag_frenzy_model", CustomModel)
@@ -71,105 +81,105 @@ def evaluate_model(checkpoint_path, model_type="ppo", num_episodes=5):
     else:  # PPO or PPO with curiosity
         algo = PPO.from_checkpoint(checkpoint_path)
 
-    # Create a directory for evaluation results if it doesn't exist
-    eval_dir = "replay_evaluations_"
-    os.makedirs(eval_dir, exist_ok=True)
+    # Enable attribution
+    algo.get_policy().model.set_attribution_enabled(True)
 
-    # Run evaluation episodes
+    # Initialize LLM interpreter if enabled
+    if interpret:
+        api_key = os.getenv("ANTHROPIC_API_KEY")
+        if not api_key:
+            raise ValueError("ANTHROPIC_API_KEY environment variable not set")
+        interpreter = LLMInterpreter(api_key=api_key)
+    else:
+        interpreter = None
+
+    # Create directories for evaluation results
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    eval_dir = f"eval_results_{timestamp}"
+    interpretations_dir = os.path.join(eval_dir, "interpretations")
+    os.makedirs(interpretations_dir, exist_ok=True)
+    
     episode_rewards = []
     episode_lengths = []
     episode_infos = []
-    wins = 0
     
     env = algo.env_creator(algo.config.env_config)
-
-    for i in range(num_episodes):
-        print(f"\nEpisode {i + 1}/{num_episodes}")
+    
+    for episode in range(num_episodes):
+        print(f"\nEpisode {episode + 1}/{num_episodes}")
+        if interpret:
+            interpreter.start_new_episode()  # Start tracking new episode
+        
         episode_reward = 0
-        episode_info = []
-        obs, info = env.reset()
-        done = False
-        truncated = False
         step = 0
-        mission_success = False
+        obs, info = env.reset()
+        done = truncated = False
         
         while not (done or truncated):
             action = algo.compute_single_action(obs)
+            policy = algo.get_policy()
+            model = policy.model
             action_type = action["action_type"]
             action_name = get_action_type_string(action)
             param_desc = format_action_params(action_type, action["params"])
+            attribution_dict = model.get_last_attribution()
             print(f"Action: {action_name} | {param_desc}")
+            print(f"Attribution: {attribution_dict}")
+
+            # Get LLM interpretation if enabled
+            if interpret:
+                interpretation = interpreter.interpret_flag_frenzy_action(env, action, attribution_dict, obs)
+                print(f"\nTactical Analysis:\n{interpretation}\n")
+            
             obs, reward, done, truncated, info = env.step(action)
             episode_reward += reward
             step += 1
-            
-            # Check for mission success (flagship destroyed)
-            if info.get("flagship_destroyed", False):
-                mission_success = True
-            
-            # Store step information
-            step_info = {
-                "step": step,
-                "action": convert_to_json_serializable(action),
-                "reward": float(reward),
-                "info": {k: convert_to_json_serializable(v) for k, v in info.items() if k != 'valid_engage_mask'}
-            }
-            episode_info.append(step_info)
-            
             print(f"Step {step}: Reward = {reward:.2f}")
+
+        print(f"Episode ended. Total Reward: {episode_reward:.4f}, Length: {step}")
         
-        if mission_success:
-            wins += 1
-            print(f"Episode {i + 1} WON - Flagship destroyed!")
-        else:
-            print(f"Episode {i + 1} LOST - Flagship not destroyed")
-            
-        episode_rewards.append(float(episode_reward))
-        episode_lengths.append(int(step))
-        episode_infos.append(episode_info)
-        print(f"Episode {i + 1} finished with total reward: {episode_reward:.2f}, length: {step}")
+        # Save episode interpretations if enabled
+        if interpret:
+            interpretation_file = interpreter.save_episode_interpretations(interpretations_dir)
+            print(f"Saved interpretations to: {interpretation_file}")
+        
+        episode_rewards.append(episode_reward)
+        episode_lengths.append(step)
+        episode_infos.append({
+            "episode": episode + 1,
+            "reward": float(episode_reward),
+            "length": step,
+            "interpretation_file": interpretation_file if interpret else None
+        })
 
-    # Calculate statistics
-    avg_reward = float(sum(episode_rewards) / len(episode_rewards))
-    avg_length = float(sum(episode_lengths) / len(episode_lengths))
-    win_rate = float(wins / num_episodes)
-
-    # Save evaluation results
-    timestamp = datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
+    env.close()
+    
+    # Save overall evaluation results
     results = {
-        "model_type": model_type,
+        "timestamp": timestamp,
         "checkpoint_path": checkpoint_path,
+        "model_type": model_type,
         "num_episodes": num_episodes,
-        "average_reward": avg_reward,
-        "average_episode_length": avg_length,
-        "win_rate": win_rate,
-        "total_wins": wins,
-        "episode_rewards": episode_rewards,
-        "episode_lengths": episode_lengths,
-        "episode_infos": episode_infos
+        "avg_reward": float(sum(episode_rewards) / len(episode_rewards)),
+        "avg_length": float(sum(episode_lengths) / len(episode_lengths)),
+        "episodes": episode_infos
     }
-
-    results_file = os.path.join(eval_dir, f"{model_type}_{timestamp}_eval.json")
+    
+    results_file = os.path.join(eval_dir, "evaluation_results.json")
     with open(results_file, "w") as f:
         json.dump(results, f, indent=2)
-
-    print(f"\nEvaluation Results:")
-    print(f"Model Type: {model_type}")
-    print(f"Win Rate: {win_rate:.2%} ({wins}/{num_episodes} episodes)")
-    print(f"Average Reward: {avg_reward:.2f}")
-    print(f"Average Episode Length: {avg_length:.2f}")
-    print(f"Results saved to: {results_file}")
-
-    # Clean up
-    env.close()
+    
+    print(f"\nEvaluation complete. Results saved to: {eval_dir}")
     ray.shutdown()
+    return results
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate trained models")
     parser.add_argument("--checkpoint", type=str, required=True, help="Path to the checkpoint directory")
     parser.add_argument("--model-type", type=str, default="ppo", choices=["ppo", "appo", "curious"], 
                       help="Type of model to evaluate (ppo, appo, or curious)")
-    parser.add_argument("--episodes", type=int, default=5, help="Number of episodes to evaluate")
+    parser.add_argument("--episodes", type=int, default=1, help="Number of episodes to evaluate")
+    parser.add_argument("--interpret", action="store_true", help="Enable LLM interpretation of actions")
     
     args = parser.parse_args()
-    evaluate_model(args.checkpoint, args.model_type, args.episodes)
+    evaluate_model(args.checkpoint, args.model_type, args.episodes, args.interpret)

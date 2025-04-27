@@ -50,13 +50,19 @@ config = (
         lr=3e-5,
         gamma=0.995,
         lambda_=0.95,
-        clip_param=0.2,
+        clip_param=0.02,
         vf_loss_coeff=1.0,
         entropy_coeff=0.01,
         model={
             "custom_model": "flag_frenzy_model",
+            "custom_model_config": {
+                "enable_attribution": True,  # Enable gradient attribution
+                "attribution_config": {
+                    "num_samples": 50,  # Number of samples for integrated gradients
+                    "internal_batch_size": 1  # Batch size for attribution computation
+                }
+            },
             "custom_action_dist": "hybrid_action_dist",
-            # "vf_share_layers": False,
         },
     )
     .experimental(_enable_new_api_stack=False)  # Use the stable API
@@ -81,6 +87,6 @@ results = tune.Tuner(
         checkpoint_config=air.CheckpointConfig(
             checkpoint_frequency=15,
             num_to_keep=5),
-        name="appo_flag_frenzy_2",
+        name="appo_flag_frenzy_3",
         log_to_file=True),
 ).fit()

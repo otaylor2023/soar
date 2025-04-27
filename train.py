@@ -1,4 +1,3 @@
-
 # Training script
 import ray
 from ray import air, tune
@@ -47,27 +46,35 @@ config = (
     PPOConfig()
     .environment(env="FlagFrenzyEnv-v0", env_config={})
     .framework("torch")
-    .rollouts(
-        num_rollout_workers=24,
-        # rollout_fragment_length=900,
-    )
     .training(
         model={
             "custom_model": "flag_frenzy_model",
+            "custom_model_config": {
+                "enable_attribution": True,  # Enable gradient attribution
+                "attribution_config": {
+                    "num_samples": 50,  # Number of samples for integrated gradients
+                    "internal_batch_size": 1  # Batch size for attribution computation
+                }
+            },
             "custom_action_dist": "hybrid_action_dist",
         },
+        clip_param=0.02,
         gamma=0.995,
         lambda_=0.95,
-        clip_param=0.2,
-        entropy_coeff=0.01,
-        vf_clip_param=10.0,
-        grad_clip=0.5,
-        lr=3e-5,
+        kl_coeff=0.2,
         train_batch_size=4000,
         sgd_minibatch_size=128,
-        num_sgd_iter=20,
+        num_sgd_iter=30,
+        lr=3e-5,
+        entropy_coeff=0.01,
+    )
+    .rollouts(
+        num_rollout_workers=24,
+        rollout_fragment_length=50,
+        num_envs_per_worker=1
     )
     .resources(num_gpus=1)
+    .debugging(log_level="INFO")
     .callbacks(FlagFrenzyCallbacks)
     .to_dict()
 )
@@ -84,4 +91,3 @@ results = tune.Tuner(
         name="rewardshape_flag_frenzy_ppo",
         log_to_file=True),
 ).fit()
-

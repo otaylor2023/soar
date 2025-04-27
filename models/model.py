@@ -340,7 +340,7 @@ class CustomModel(TorchModelV2, nn.Module):
             # print(f"has_valid_targets: {has_valid_targets}")
             # print(f"logits masked to: {logits}")
         
-        # print(f"logits: {logits.shape}")
+        print(f"logits: {logits}")
         # Compute attribution for this forward pass
         # We'll do this during both training and inference
         if self.enable_attribution:
