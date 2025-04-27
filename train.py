@@ -6,7 +6,7 @@ from ray.rllib.algorithms.ppo import PPOConfig
 from ray.rllib.models import ModelCatalog
 from ray.tune.registry import register_env
 from register_env import env_creator
-from models.model import CustomModel
+from models.model_oter import CustomModel
 from models.hybrid_action_dist import HybridActionDistribution
 
 # Register model

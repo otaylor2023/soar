@@ -4,7 +4,7 @@ import numpy as np
 import torch
 from ray.rllib.algorithms.ppo import PPO
 from ray.rllib.models import ModelCatalog
-from models.model import CustomModel
+from models.model_oter import CustomModel
 from models.hybrid_action_dist import HybridActionDistribution
 from env.flag_frenzy_env import FlagFrenzyEnv
 import datetime

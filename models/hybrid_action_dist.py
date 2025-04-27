@@ -42,65 +42,14 @@ class HybridActionDistribution(TorchMultiActionDistribution):
         param_size = action_space.spaces["params"].shape[0]
         return discrete_size + (param_size * 2)
     
+
     def sample(self):
-        print(f"flat_child_distributions: {self.flat_child_distributions}")
         action_type = self.flat_child_distributions[0].sample()
         gaussian_dist = self.flat_child_distributions[1]
         params_sampled = gaussian_dist.sample()  # shape: (batch, 10)
 
-        engage_mask = getattr(self.model, "last_obs", {}).get("valid_engage_mask", None)
-        entity_id_list_batch = getattr(self.model, "last_obs", {}).get("entity_id_list", None)
-
-        # Assume logits for action_type are stored (shape: [batch, 4])
-        action_logits = getattr(self.model, "last_action_logits", None)
-
-        if engage_mask is not None and entity_id_list_batch is not None and action_logits is not None:
-            if engage_mask.dim() == 2:
-                engage_mask = engage_mask.unsqueeze(0)
-
-            batch_size = action_type.shape[0]
-            engage_mask = engage_mask.view(batch_size, self.max_entities, self.max_entities)
-
-            for i in range(batch_size):
-                if action_type[i].item() == 3:
-                    src_float = torch.clamp(params_sampled[i, 0], 0.0, 1.0).item()
-                    tgt_float = torch.clamp(params_sampled[i, 1], 0.0, 1.0).item()
-
-                    entity_id_list = entity_id_list_batch[i]
-                    entity_count = len(entity_id_list)
-
-                    src_idx = int(src_float * (entity_count - 1))
-                    tgt_idx = int(tgt_float * (entity_count - 1))
-
-                    src_idx = min(max(src_idx, 0), entity_count - 1)
-                    tgt_idx = min(max(tgt_idx, 0), entity_count - 1)
-
-                    src_eid = entity_id_list[src_idx]
-                    tgt_eid = entity_id_list[tgt_idx]
-
-                    is_valid = engage_mask[i, src_idx, tgt_idx].item()
-
-                    if is_valid == 0.0:
-                        # Mask out Engage (set its logit to a very low value)
-                        masked_logits = action_logits[i].clone()
-                        masked_logits[3] = -1e9
-
-                        # Pick highest remaining action
-                        new_action = torch.argmax(masked_logits).item()
-                        action_type[i] = new_action
-
-                        self.logger.info(f"[MASKED OUT] Invalid engage → src_idx={src_idx} (ID={src_eid}) tgt_idx={tgt_idx} (ID={tgt_eid}) → Switching to action {new_action} ({['NoOp', 'Move', 'RTB', 'Engage'][new_action]})")
-                    else:
-                        self.logger.info(f"[AFTER MASKING] Valid engage → src_idx={src_idx} (ID={src_eid}) tgt_idx={tgt_idx} (ID={tgt_eid})")
-
-        self.last_sample = {
-            "action_type": action_type,
-            "params": params_sampled
-        }
-        return self.last_sample
-
-
-    def sample_old(self):
+        print(f"flat_child_distributions {self.flat_child_distributions[0].inputs}")
+        # inspect_distribution(self.flat_child_distributions[0])
         action_type = self.flat_child_distributions[0].sample()
         gaussian_dist = self.flat_child_distributions[1]
         params_sampled = gaussian_dist.sample()  # shape: (batch, 10)
@@ -174,3 +123,21 @@ class HybridActionDistribution(TorchMultiActionDistribution):
                 other.flat_child_distributions
             )
         )
+
+def inspect_distribution(dist):
+    print(f"\nInspecting Distribution: {type(dist).__name__}")
+    attributes = [attr for attr in dir(dist) if not attr.startswith("__")]
+
+    for attr in attributes:
+        try:
+            value = getattr(dist, attr)
+            # Only print small tensors or simple types
+            if isinstance(value, torch.Tensor):
+                if value.numel() < 20:
+                    print(f"  - {attr}: Tensor shape {value.shape}, values: {value}")
+                else:
+                    print(f"  - {attr}: Tensor shape {value.shape}")
+            else:
+                print(f"  - {attr}: {value}")
+        except Exception as e:
+            print(f"  - {attr}: <Could not retrieve> ({e})")

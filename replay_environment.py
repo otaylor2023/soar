@@ -8,8 +8,9 @@ import ray
 from ray.rllib.algorithms.ppo import PPO
 from ray.rllib.models import ModelCatalog
 from ray.tune.registry import register_env
-from models.model import CustomModel
+from models.model_oter import CustomModel
 from models.hybrid_action_dist import HybridActionDistribution
+from utils import format_explanation
 
 
 class ReplayEnvironment:
@@ -58,13 +59,37 @@ class ReplayEnvironment:
         self.player_events = self.replay_data.get("PlayerEvents", [])
         self.current_event_idx = 0
 
+        self.random_seed = self.replay_data.get("RandomSeed", None)
+        if self.random_seed is not None:
+            np.random.seed(self.random_seed)
+            import torch
+            torch.manual_seed(self.random_seed)
+            # if self.enable_simulation:
+            #     self.algo.workers.foreach_worker(
+            #         lambda w: w.set_seed(self.random_seed)
+            #     )
+
+        def seed_worker(worker):
+            env = worker.env
+            if hasattr(env, "seed"):
+                env.seed(self.random_seed)
+            np.random.seed(self.random_seed)
+            try:
+                import torch
+                torch.manual_seed(self.random_seed)
+            except ImportError:
+                pass
+
+        self.algo.workers.foreach_worker(seed_worker)
         # Create environment
-        self.env = env_creator({"save_replay": False})  # Disable replay saving in replay mode
+        self.env = env_creator({"save_replay": False, "seed": self.random_seed})
         
         self.logger.info(f"Loaded replay file: {replay_file_path}")
         self.logger.info(f"Found {len(self.mission_events)} mission events and {len(self.player_events)} player events")
+        
         if self.enable_simulation:
             self.logger.info(f"Agent simulation enabled with checkpoint: {checkpoint_path}")
+
 
     def reset(self):
         """Reset environment and apply initial mission events."""
@@ -111,9 +136,9 @@ class ReplayEnvironment:
             model = policy.model
             attribution_dict = model.get_last_attribution()
             print(f"player_action: {player_action}")
-            print(f"player attribution from agent: {model.format_explanation(attribution_dict[player_action['action_type']][0])}")
+            print(f"player attribution from agent: {format_explanation(attribution_dict[player_action['action_type']][0], self.env)}")
             print(f"agent_action: {agent_action}")
-            print(f"agent attribution from agent: {model.format_explanation(attribution_dict[agent_action['action_type']][0])}")
+            print(f"agent attribution from agent: {format_explanation(attribution_dict[agent_action['action_type']][0], self.env)}")
         
         # Execute action in environment
         obs, reward, done, truncated, info = self.env.step(player_action)
@@ -148,9 +173,9 @@ class ReplayEnvironment:
             weapons_mode = event.get("WeaponsMode", 0)
             
             # Normalize parameters
-            action["params"][0] = target_id / self.env.max_entities
-            action["params"][1] = engagement_level / 3  # Assuming 4 engagement levels
-            action["params"][2] = weapons_mode / 2  # Assuming 3 weapons modes
+            action["params"][0] = target_id
+            action["params"][1] = engagement_level
+            action["params"][2] = weapons_mode
 
         return action
 

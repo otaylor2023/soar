@@ -7,7 +7,7 @@ from collections import defaultdict
 from typing import Dict, List, Tuple, Any
 import os
 
-from models.model import CustomModel
+from models.model_oter import CustomModel
 from models.hybrid_action_dist import HybridActionDistribution
 from ray.rllib.models import ModelCatalog
 from ray.rllib.algorithms.ppo import PPO

@@ -11,7 +11,7 @@ import numpy as np
 import glob
 from ray.rllib.algorithms.ppo import PPO
 from ray.tune.registry import register_env
-from models.model import CustomModel
+from models.model_oter import CustomModel
 from models.hybrid_action_dist import HybridActionDistribution
 from ray.rllib.models import ModelCatalog
 from register_env import env_creator
