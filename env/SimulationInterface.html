@@ -1,0 +1,2622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module SimulationInterface</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">SimulationInterface</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cneoronin%5Crl-sim-neoronin%5Cflagfrenzy%5Cenv%5Csimulationinterface.cp311-win_amd64.pyd">c:\neoronin\rl-sim-neoronin\flagfrenzy\env\simulationinterface.cp311-win_amd64.pyd</a></td></tr></table>
+    <p><span class="code">Simulation&nbsp;interface</span></p>
+<p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text">pybind11_builtins.pybind11_object(<a href="builtins.html#object">builtins.object</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="SimulationInterface.html#ControllableEntityManouver">ControllableEntityManouver</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#Entity">Entity</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="SimulationInterface.html#Bullseye">Bullseye</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="SimulationInterface.html#ControllableGroupEntity">ControllableGroupEntity</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="SimulationInterface.html#Package">Package</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#Squadron">Squadron</a>
+</dt></dl>
+</dd>
+<dt class="heading-text"><a href="SimulationInterface.html#Unit">Unit</a>
+</dt></dl>
+</dd>
+<dt class="heading-text"><a href="SimulationInterface.html#Flag">Flag</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#Projectile">Projectile</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#TargetGroup">TargetGroup</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#VictoryConditions">VictoryConditions</a>
+</dt></dl>
+</dd>
+<dt class="heading-text"><a href="SimulationInterface.html#EntityDomain">EntityDomain</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#Event">Event</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="SimulationInterface.html#MissionEvent">MissionEvent</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="SimulationInterface.html#MissionEvent_SetVictoryConditions">MissionEvent_SetVictoryConditions</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#MissionEvent_SpawnBullseye">MissionEvent_SpawnBullseye</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#MissionEvent_SpawnFlag">MissionEvent_SpawnFlag</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#MissionEvent_SpawnPackage">MissionEvent_SpawnPackage</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#MissionEvent_SpawnSquadron">MissionEvent_SpawnSquadron</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#MissionEvent_SpawnUnit">MissionEvent_SpawnUnit</a>
+</dt></dl>
+</dd>
+</dl>
+</dd>
+<dt class="heading-text"><a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="SimulationInterface.html#PlayerEvent_ChangeFormation">PlayerEvent_ChangeFormation</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#PlayerEvent_CombatManouver">PlayerEvent_CombatManouver</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="SimulationInterface.html#PlayerEvent_Abort">PlayerEvent_Abort</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#PlayerEvent_Commit">PlayerEvent_Commit</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#PlayerEvent_Commit_Sprint">PlayerEvent_Commit_Sprint</a>
+</dt></dl>
+</dd>
+<dt class="heading-text"><a href="SimulationInterface.html#PlayerEvent_NonCombatManouver">PlayerEvent_NonCombatManouver</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="SimulationInterface.html#PlayerEvent_CAP">PlayerEvent_CAP</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#PlayerEvent_Move">PlayerEvent_Move</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#PlayerEvent_RTB">PlayerEvent_RTB</a>
+</dt></dl>
+</dd>
+<dt class="heading-text"><a href="SimulationInterface.html#PlayerEvent_NonCombatManouverQueue">PlayerEvent_NonCombatManouverQueue</a>
+</dt></dl>
+</dd>
+</dl>
+</dd>
+<dt class="heading-text"><a href="SimulationInterface.html#Faction">Faction</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#Formation">Formation</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#Quat4">Quat4</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#SimulationConfig">SimulationConfig</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#SimulationData">SimulationData</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="SimulationInterface.html#AdversaryContact">AdversaryContact</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#AdversaryLost">AdversaryLost</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#ChangedFormation">ChangedFormation</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#Combat_Continue">Combat_Continue</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#Combat_Shoot">Combat_Shoot</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#Commit_Finished">Commit_Finished</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#EntityDespawned">EntityDespawned</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#EntitySpawned">EntitySpawned</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#Move_ReachedTarget">Move_ReachedTarget</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#ProjectileExploded">ProjectileExploded</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#RTB_ReachedTarget">RTB_ReachedTarget</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#TargetGroupAdversaryAdded">TargetGroupAdversaryAdded</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#TargetGroupAdversaryRemoved">TargetGroupAdversaryRemoved</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#UnitKilled">UnitKilled</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#Victory">Victory</a>
+</dt></dl>
+</dd>
+<dt class="heading-text"><a href="SimulationInterface.html#TargetDomain">TargetDomain</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#UnitCombatManouverData">UnitCombatManouverData</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#UnitProjectileData">UnitProjectileData</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#UnitWeaponData">UnitWeaponData</a>
+</dt><dt class="heading-text"><a href="SimulationInterface.html#Vector3">Vector3</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="AdversaryContact">class <strong>AdversaryContact</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">An&nbsp;adversary&nbsp;has&nbsp;been&nbsp;detected.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#AdversaryContact">AdversaryContact</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="AdversaryContact-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;detecting&nbsp;the&nbsp;adversary.</span></dd>
+</dl>
+<dl><dt><strong>TargetGroup</strong></dt>
+<dd><span class="code">The&nbsp;target&nbsp;group&nbsp;that&nbsp;was&nbsp;detected.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="AdversaryContact-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="AdversaryLost">class <strong>AdversaryLost</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">The&nbsp;target&nbsp;group&nbsp;is&nbsp;no&nbsp;longer&nbsp;detected.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#AdversaryLost">AdversaryLost</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="AdversaryLost-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;no&nbsp;longer&nbsp;detecting&nbsp;the&nbsp;adversary.</span></dd>
+</dl>
+<dl><dt><strong>TargetGroup</strong></dt>
+<dd><span class="code">The&nbsp;target&nbsp;group&nbsp;that&nbsp;was&nbsp;lost.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="AdversaryLost-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Bullseye">class <strong>Bullseye</strong></a>(<a href="SimulationInterface.html#Entity">Entity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">The&nbsp;representation&nbsp;of&nbsp;a&nbsp;bullseye&nbsp;in&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Bullseye">Bullseye</a></dd>
+<dd><a href="SimulationInterface.html#Entity">Entity</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Bullseye-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><a name="Bullseye-GetDomain"><strong>GetDomain</strong></a>(...)</dt><dd><span class="code"><a href="#Bullseye-GetDomain">GetDomain</a>(self:&nbsp;SimulationInterface.<a href="#Entity">Entity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a><br>
+&nbsp;<br>
+The&nbsp;domain&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><strong>EntityId</strong></dt>
+<dd><span class="code">Unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Faction</strong></dt>
+<dd><span class="code">The&nbsp;faction&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd>
+</dl>
+<dl><dt><strong>Identifier</strong></dt>
+<dd><span class="code">The&nbsp;human-readable&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Pos</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;position&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Rot</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;rotation&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Bullseye-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ChangedFormation">class <strong>ChangedFormation</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;squadron&nbsp;has&nbsp;finished&nbsp;changing&nbsp;formation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#ChangedFormation">ChangedFormation</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ChangedFormation-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Formation</strong></dt>
+<dd><span class="code">The&nbsp;formation&nbsp;that&nbsp;was&nbsp;changed&nbsp;to.</span></dd>
+</dl>
+<dl><dt><strong>Squadron</strong></dt>
+<dd><span class="code">The&nbsp;squadron&nbsp;that&nbsp;has&nbsp;changed&nbsp;formation.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="ChangedFormation-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Combat_Continue">class <strong>Combat_Continue</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">An&nbsp;entity&nbsp;continues&nbsp;to&nbsp;engage&nbsp;a&nbsp;target.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Combat_Continue">Combat_Continue</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Combat_Continue-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;operation&nbsp;involves.</span></dd>
+</dl>
+<dl><dt><strong>Target</strong></dt>
+<dd><span class="code">The&nbsp;target&nbsp;that&nbsp;is&nbsp;continued&nbsp;for&nbsp;engagement.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Combat_Continue-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Combat_Shoot">class <strong>Combat_Shoot</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;projectile&nbsp;has&nbsp;been&nbsp;shot.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Combat_Shoot">Combat_Shoot</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Combat_Shoot-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;operation&nbsp;involves.</span></dd>
+</dl>
+<dl><dt><strong>Target</strong></dt>
+<dd><span class="code">The&nbsp;target&nbsp;the&nbsp;projectile&nbsp;was&nbsp;shot&nbsp;at.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Combat_Shoot-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Commit_Finished">class <strong>Commit_Finished</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;commit&nbsp;manouver&nbsp;has&nbsp;finished.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Commit_Finished">Commit_Finished</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Commit_Finished-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;operation&nbsp;involves.</span></dd>
+</dl>
+<dl><dt><strong>Success</strong></dt>
+<dd><span class="code">Whether&nbsp;the&nbsp;commit&nbsp;action&nbsp;was&nbsp;succesful.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Commit_Finished-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ControllableEntity">class <strong>ControllableEntity</strong></a>(<a href="SimulationInterface.html#Entity">Entity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Base&nbsp;class&nbsp;for&nbsp;any&nbsp;controllable&nbsp;entity&nbsp;in&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a></dd>
+<dd><a href="SimulationInterface.html#Entity">Entity</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ControllableEntity-GetAmmo"><strong>GetAmmo</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntity-GetAmmo">GetAmmo</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;ammo&nbsp;this&nbsp;entity&nbsp;has.</span></dd></dl>
+
+<dl><dt><a name="ControllableEntity-GetEngagementLevel"><strong>GetEngagementLevel</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntity-GetEngagementLevel">GetEngagementLevel</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;current&nbsp;engagement&nbsp;level.</span></dd></dl>
+
+<dl><dt><a name="ControllableEntity-GetTargetDomains"><strong>GetTargetDomains</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntity-GetTargetDomains">GetTargetDomains</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;domain(s)&nbsp;this&nbsp;entity&nbsp;can&nbsp;target.</span></dd></dl>
+
+<dl><dt><a name="ControllableEntity-GetTargetEntity"><strong>GetTargetEntity</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntity-GetTargetEntity">GetTargetEntity</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a><br>
+&nbsp;<br>
+The&nbsp;current&nbsp;target&nbsp;entity.</span></dd></dl>
+
+<dl><dt><a name="ControllableEntity-GetTargetGroup"><strong>GetTargetGroup</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntity-GetTargetGroup">GetTargetGroup</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;SimTargetGroup<br>
+&nbsp;<br>
+The&nbsp;target&nbsp;group&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to&nbsp;(if&nbsp;any)</span></dd></dl>
+
+<dl><dt><a name="ControllableEntity-GetWeaponsUsageMode"><strong>GetWeaponsUsageMode</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntity-GetWeaponsUsageMode">GetWeaponsUsageMode</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;current&nbsp;weapons&nbsp;usage.</span></dd></dl>
+
+<dl><dt><a name="ControllableEntity-HasParent"><strong>HasParent</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntity-HasParent">HasParent</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Indicating&nbsp;whether&nbsp;the&nbsp;entity&nbsp;has&nbsp;a&nbsp;parent</span></dd></dl>
+
+<dl><dt><a name="ControllableEntity-IsAlive"><strong>IsAlive</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntity-IsAlive">IsAlive</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;alive.</span></dd></dl>
+
+<dl><dt><a name="ControllableEntity-IsDead"><strong>IsDead</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntity-IsDead">IsDead</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;dead.</span></dd></dl>
+
+<dl><dt><a name="ControllableEntity-SelectWeapons"><strong>SelectWeapons</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntity-SelectWeapons">SelectWeapons</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>,&nbsp;arg0:&nbsp;SimTargetGroup,&nbsp;arg1:&nbsp;bool)&nbsp;-&gt;&nbsp;dict[str,&nbsp;SimulationInterface.<a href="#UnitWeaponData">UnitWeaponData</a>]<br>
+&nbsp;<br>
+Select&nbsp;the&nbsp;weapons&nbsp;that&nbsp;be&nbsp;used&nbsp;for&nbsp;performing&nbsp;an&nbsp;attack.</span></dd></dl>
+
+<dl><dt><a name="ControllableEntity-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Controllable</strong></dt>
+<dd><span class="code">Whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;controllable.</span></dd>
+</dl>
+<dl><dt><strong>CurrentManouver</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;manouver&nbsp;this&nbsp;entity&nbsp;is&nbsp;performing.</span></dd>
+</dl>
+<dl><dt><strong>DetectedAdversaries</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;set&nbsp;of&nbsp;adversaries&nbsp;being&nbsp;detected.</span></dd>
+</dl>
+<dl><dt><strong>HasReachedBase</strong></dt>
+<dd><span class="code">A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;we&nbsp;are&nbsp;currently&nbsp;at&nbsp;the&nbsp;base.</span></dd>
+</dl>
+<dl><dt><strong>Parent</strong></dt>
+<dd><span class="code">The&nbsp;parent&nbsp;entity&nbsp;(if&nbsp;any)</span></dd>
+</dl>
+<dl><dt><strong>Vel</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;velocity.</span></dd>
+</dl>
+<hr>
+Methods inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><a name="ControllableEntity-GetDomain"><strong>GetDomain</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntity-GetDomain">GetDomain</a>(self:&nbsp;SimulationInterface.<a href="#Entity">Entity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a><br>
+&nbsp;<br>
+The&nbsp;domain&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><strong>EntityId</strong></dt>
+<dd><span class="code">Unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Faction</strong></dt>
+<dd><span class="code">The&nbsp;faction&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd>
+</dl>
+<dl><dt><strong>Identifier</strong></dt>
+<dd><span class="code">The&nbsp;human-readable&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Pos</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;position&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Rot</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;rotation&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="ControllableEntity-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ControllableEntityManouver">class <strong>ControllableEntityManouver</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#ControllableEntityManouver">ControllableEntityManouver</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ControllableEntityManouver-__eq__"><strong>__eq__</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntityManouver-__eq__">__eq__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;bool</span></dd></dl>
+
+<dl><dt><a name="ControllableEntityManouver-__getstate__"><strong>__getstate__</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntityManouver-__getstate__">__getstate__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="ControllableEntityManouver-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntityManouver-__hash__">__hash__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="ControllableEntityManouver-__index__"><strong>__index__</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntityManouver-__index__">__index__</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntityManouver">ControllableEntityManouver</a>,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="ControllableEntityManouver-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntityManouver-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntityManouver">ControllableEntityManouver</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="ControllableEntityManouver-__int__"><strong>__int__</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntityManouver-__int__">__int__</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntityManouver">ControllableEntityManouver</a>,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="ControllableEntityManouver-__ne__"><strong>__ne__</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntityManouver-__ne__">__ne__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;bool</span></dd></dl>
+
+<dl><dt><a name="ControllableEntityManouver-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntityManouver-__repr__">__repr__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd></dl>
+
+<dl><dt><a name="ControllableEntityManouver-__setstate__"><strong>__setstate__</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntityManouver-__setstate__">__setstate__</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntityManouver">ControllableEntityManouver</a>,&nbsp;state:&nbsp;int,&nbsp;/)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="ControllableEntityManouver-__str__"><strong>__str__</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableEntityManouver-__str__">__str__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__members__</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><span class="code">name(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Combat</strong> = &lt;ControllableEntityManouver.Combat: 2&gt;</dl>
+
+<dl><dt><strong>NoManouver</strong> = &lt;ControllableEntityManouver.NoManouver: 0&gt;</dl>
+
+<dl><dt><strong>NonCombat</strong> = &lt;ControllableEntityManouver.NonCombat: 1&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="ControllableEntityManouver-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ControllableGroupEntity">class <strong>ControllableGroupEntity</strong></a>(<a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Base&nbsp;class&nbsp;for&nbsp;any&nbsp;controllable&nbsp;group&nbsp;entity&nbsp;in&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#ControllableGroupEntity">ControllableGroupEntity</a></dd>
+<dd><a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a></dd>
+<dd><a href="SimulationInterface.html#Entity">Entity</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ControllableGroupEntity-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Entities</strong></dt>
+<dd><span class="code">The&nbsp;entities&nbsp;that&nbsp;are&nbsp;part&nbsp;of&nbsp;this&nbsp;group.</span></dd>
+</dl>
+<hr>
+Methods inherited from <a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a>:<br>
+<dl><dt><a name="ControllableGroupEntity-GetAmmo"><strong>GetAmmo</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableGroupEntity-GetAmmo">GetAmmo</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;ammo&nbsp;this&nbsp;entity&nbsp;has.</span></dd></dl>
+
+<dl><dt><a name="ControllableGroupEntity-GetEngagementLevel"><strong>GetEngagementLevel</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableGroupEntity-GetEngagementLevel">GetEngagementLevel</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;current&nbsp;engagement&nbsp;level.</span></dd></dl>
+
+<dl><dt><a name="ControllableGroupEntity-GetTargetDomains"><strong>GetTargetDomains</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableGroupEntity-GetTargetDomains">GetTargetDomains</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;domain(s)&nbsp;this&nbsp;entity&nbsp;can&nbsp;target.</span></dd></dl>
+
+<dl><dt><a name="ControllableGroupEntity-GetTargetEntity"><strong>GetTargetEntity</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableGroupEntity-GetTargetEntity">GetTargetEntity</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a><br>
+&nbsp;<br>
+The&nbsp;current&nbsp;target&nbsp;entity.</span></dd></dl>
+
+<dl><dt><a name="ControllableGroupEntity-GetTargetGroup"><strong>GetTargetGroup</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableGroupEntity-GetTargetGroup">GetTargetGroup</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;SimTargetGroup<br>
+&nbsp;<br>
+The&nbsp;target&nbsp;group&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to&nbsp;(if&nbsp;any)</span></dd></dl>
+
+<dl><dt><a name="ControllableGroupEntity-GetWeaponsUsageMode"><strong>GetWeaponsUsageMode</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableGroupEntity-GetWeaponsUsageMode">GetWeaponsUsageMode</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;current&nbsp;weapons&nbsp;usage.</span></dd></dl>
+
+<dl><dt><a name="ControllableGroupEntity-HasParent"><strong>HasParent</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableGroupEntity-HasParent">HasParent</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Indicating&nbsp;whether&nbsp;the&nbsp;entity&nbsp;has&nbsp;a&nbsp;parent</span></dd></dl>
+
+<dl><dt><a name="ControllableGroupEntity-IsAlive"><strong>IsAlive</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableGroupEntity-IsAlive">IsAlive</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;alive.</span></dd></dl>
+
+<dl><dt><a name="ControllableGroupEntity-IsDead"><strong>IsDead</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableGroupEntity-IsDead">IsDead</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;dead.</span></dd></dl>
+
+<dl><dt><a name="ControllableGroupEntity-SelectWeapons"><strong>SelectWeapons</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableGroupEntity-SelectWeapons">SelectWeapons</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>,&nbsp;arg0:&nbsp;SimTargetGroup,&nbsp;arg1:&nbsp;bool)&nbsp;-&gt;&nbsp;dict[str,&nbsp;SimulationInterface.<a href="#UnitWeaponData">UnitWeaponData</a>]<br>
+&nbsp;<br>
+Select&nbsp;the&nbsp;weapons&nbsp;that&nbsp;be&nbsp;used&nbsp;for&nbsp;performing&nbsp;an&nbsp;attack.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a>:<br>
+<dl><dt><strong>Controllable</strong></dt>
+<dd><span class="code">Whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;controllable.</span></dd>
+</dl>
+<dl><dt><strong>CurrentManouver</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;manouver&nbsp;this&nbsp;entity&nbsp;is&nbsp;performing.</span></dd>
+</dl>
+<dl><dt><strong>DetectedAdversaries</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;set&nbsp;of&nbsp;adversaries&nbsp;being&nbsp;detected.</span></dd>
+</dl>
+<dl><dt><strong>HasReachedBase</strong></dt>
+<dd><span class="code">A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;we&nbsp;are&nbsp;currently&nbsp;at&nbsp;the&nbsp;base.</span></dd>
+</dl>
+<dl><dt><strong>Parent</strong></dt>
+<dd><span class="code">The&nbsp;parent&nbsp;entity&nbsp;(if&nbsp;any)</span></dd>
+</dl>
+<dl><dt><strong>Vel</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;velocity.</span></dd>
+</dl>
+<hr>
+Methods inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><a name="ControllableGroupEntity-GetDomain"><strong>GetDomain</strong></a>(...)</dt><dd><span class="code"><a href="#ControllableGroupEntity-GetDomain">GetDomain</a>(self:&nbsp;SimulationInterface.<a href="#Entity">Entity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a><br>
+&nbsp;<br>
+The&nbsp;domain&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><strong>EntityId</strong></dt>
+<dd><span class="code">Unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Faction</strong></dt>
+<dd><span class="code">The&nbsp;faction&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd>
+</dl>
+<dl><dt><strong>Identifier</strong></dt>
+<dd><span class="code">The&nbsp;human-readable&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Pos</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;position&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Rot</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;rotation&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="ControllableGroupEntity-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Entity">class <strong>Entity</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Base&nbsp;class&nbsp;for&nbsp;any&nbsp;entity&nbsp;in&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Entity">Entity</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Entity-GetDomain"><strong>GetDomain</strong></a>(...)</dt><dd><span class="code"><a href="#Entity-GetDomain">GetDomain</a>(self:&nbsp;SimulationInterface.<a href="#Entity">Entity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a><br>
+&nbsp;<br>
+The&nbsp;domain&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd></dl>
+
+<dl><dt><a name="Entity-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>EntityId</strong></dt>
+<dd><span class="code">Unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Faction</strong></dt>
+<dd><span class="code">The&nbsp;faction&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd>
+</dl>
+<dl><dt><strong>Identifier</strong></dt>
+<dd><span class="code">The&nbsp;human-readable&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Pos</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;position&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Rot</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;rotation&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Entity-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="EntityDespawned">class <strong>EntityDespawned</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">An&nbsp;entity&nbsp;has&nbsp;been&nbsp;despawned.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#EntityDespawned">EntityDespawned</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="EntityDespawned-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;that&nbsp;was&nbsp;despawned.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="EntityDespawned-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="EntityDomain">class <strong>EntityDomain</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#EntityDomain">EntityDomain</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="EntityDomain-__eq__"><strong>__eq__</strong></a>(...)</dt><dd><span class="code"><a href="#EntityDomain-__eq__">__eq__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;bool</span></dd></dl>
+
+<dl><dt><a name="EntityDomain-__getstate__"><strong>__getstate__</strong></a>(...)</dt><dd><span class="code"><a href="#EntityDomain-__getstate__">__getstate__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="EntityDomain-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><span class="code"><a href="#EntityDomain-__hash__">__hash__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="EntityDomain-__index__"><strong>__index__</strong></a>(...)</dt><dd><span class="code"><a href="#EntityDomain-__index__">__index__</a>(self:&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a>,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="EntityDomain-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#EntityDomain-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="EntityDomain-__int__"><strong>__int__</strong></a>(...)</dt><dd><span class="code"><a href="#EntityDomain-__int__">__int__</a>(self:&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a>,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="EntityDomain-__ne__"><strong>__ne__</strong></a>(...)</dt><dd><span class="code"><a href="#EntityDomain-__ne__">__ne__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;bool</span></dd></dl>
+
+<dl><dt><a name="EntityDomain-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><span class="code"><a href="#EntityDomain-__repr__">__repr__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd></dl>
+
+<dl><dt><a name="EntityDomain-__setstate__"><strong>__setstate__</strong></a>(...)</dt><dd><span class="code"><a href="#EntityDomain-__setstate__">__setstate__</a>(self:&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a>,&nbsp;state:&nbsp;int,&nbsp;/)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="EntityDomain-__str__"><strong>__str__</strong></a>(...)</dt><dd><span class="code"><a href="#EntityDomain-__str__">__str__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__members__</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><span class="code">name(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Air</strong> = &lt;EntityDomain.Air: 2&gt;</dl>
+
+<dl><dt><strong>Land</strong> = &lt;EntityDomain.Land: 1&gt;</dl>
+
+<dl><dt><strong>None</strong> = &lt;EntityDomain.None: 0&gt;</dl>
+
+<dl><dt><strong>Sea</strong> = &lt;EntityDomain.Sea: 3&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="EntityDomain-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="EntitySpawned">class <strong>EntitySpawned</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">An&nbsp;entity&nbsp;has&nbsp;been&nbsp;spawned.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#EntitySpawned">EntitySpawned</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="EntitySpawned-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;that&nbsp;was&nbsp;spawned.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="EntitySpawned-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Event">class <strong>Event</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Base&nbsp;class&nbsp;for&nbsp;any&nbsp;events.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Event-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Event-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Faction">class <strong>Faction</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Faction">Faction</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Faction-__eq__"><strong>__eq__</strong></a>(...)</dt><dd><span class="code"><a href="#Faction-__eq__">__eq__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;bool</span></dd></dl>
+
+<dl><dt><a name="Faction-__getstate__"><strong>__getstate__</strong></a>(...)</dt><dd><span class="code"><a href="#Faction-__getstate__">__getstate__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="Faction-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><span class="code"><a href="#Faction-__hash__">__hash__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="Faction-__index__"><strong>__index__</strong></a>(...)</dt><dd><span class="code"><a href="#Faction-__index__">__index__</a>(self:&nbsp;SimulationInterface.<a href="#Faction">Faction</a>,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="Faction-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#Faction-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#Faction">Faction</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="Faction-__int__"><strong>__int__</strong></a>(...)</dt><dd><span class="code"><a href="#Faction-__int__">__int__</a>(self:&nbsp;SimulationInterface.<a href="#Faction">Faction</a>,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="Faction-__ne__"><strong>__ne__</strong></a>(...)</dt><dd><span class="code"><a href="#Faction-__ne__">__ne__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;bool</span></dd></dl>
+
+<dl><dt><a name="Faction-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><span class="code"><a href="#Faction-__repr__">__repr__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd></dl>
+
+<dl><dt><a name="Faction-__setstate__"><strong>__setstate__</strong></a>(...)</dt><dd><span class="code"><a href="#Faction-__setstate__">__setstate__</a>(self:&nbsp;SimulationInterface.<a href="#Faction">Faction</a>,&nbsp;state:&nbsp;int,&nbsp;/)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="Faction-__str__"><strong>__str__</strong></a>(...)</dt><dd><span class="code"><a href="#Faction-__str__">__str__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__members__</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><span class="code">name(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Dynasty</strong> = &lt;Faction.Dynasty: 1&gt;</dl>
+
+<dl><dt><strong>Legacy</strong> = &lt;Faction.Legacy: 0&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Faction-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Flag">class <strong>Flag</strong></a>(<a href="SimulationInterface.html#Entity">Entity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">The&nbsp;representation&nbsp;of&nbsp;a&nbsp;flag&nbsp;in&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Flag">Flag</a></dd>
+<dd><a href="SimulationInterface.html#Entity">Entity</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Flag-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><a name="Flag-GetDomain"><strong>GetDomain</strong></a>(...)</dt><dd><span class="code"><a href="#Flag-GetDomain">GetDomain</a>(self:&nbsp;SimulationInterface.<a href="#Entity">Entity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a><br>
+&nbsp;<br>
+The&nbsp;domain&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><strong>EntityId</strong></dt>
+<dd><span class="code">Unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Faction</strong></dt>
+<dd><span class="code">The&nbsp;faction&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd>
+</dl>
+<dl><dt><strong>Identifier</strong></dt>
+<dd><span class="code">The&nbsp;human-readable&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Pos</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;position&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Rot</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;rotation&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Flag-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Formation">class <strong>Formation</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Formation">Formation</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Formation-__eq__"><strong>__eq__</strong></a>(...)</dt><dd><span class="code"><a href="#Formation-__eq__">__eq__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;bool</span></dd></dl>
+
+<dl><dt><a name="Formation-__getstate__"><strong>__getstate__</strong></a>(...)</dt><dd><span class="code"><a href="#Formation-__getstate__">__getstate__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="Formation-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><span class="code"><a href="#Formation-__hash__">__hash__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="Formation-__index__"><strong>__index__</strong></a>(...)</dt><dd><span class="code"><a href="#Formation-__index__">__index__</a>(self:&nbsp;SimulationInterface.<a href="#Formation">Formation</a>,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="Formation-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#Formation-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#Formation">Formation</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="Formation-__int__"><strong>__int__</strong></a>(...)</dt><dd><span class="code"><a href="#Formation-__int__">__int__</a>(self:&nbsp;SimulationInterface.<a href="#Formation">Formation</a>,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="Formation-__ne__"><strong>__ne__</strong></a>(...)</dt><dd><span class="code"><a href="#Formation-__ne__">__ne__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;bool</span></dd></dl>
+
+<dl><dt><a name="Formation-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><span class="code"><a href="#Formation-__repr__">__repr__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd></dl>
+
+<dl><dt><a name="Formation-__setstate__"><strong>__setstate__</strong></a>(...)</dt><dd><span class="code"><a href="#Formation-__setstate__">__setstate__</a>(self:&nbsp;SimulationInterface.<a href="#Formation">Formation</a>,&nbsp;state:&nbsp;int,&nbsp;/)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="Formation-__str__"><strong>__str__</strong></a>(...)</dt><dd><span class="code"><a href="#Formation-__str__">__str__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__members__</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><span class="code">name(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Bracket</strong> = &lt;Formation.Bracket: 4&gt;</dl>
+
+<dl><dt><strong>LongTrail</strong> = &lt;Formation.LongTrail: 2&gt;</dl>
+
+<dl><dt><strong>MediumTrail</strong> = &lt;Formation.MediumTrail: 1&gt;</dl>
+
+<dl><dt><strong>ShortTrail</strong> = &lt;Formation.ShortTrail: 0&gt;</dl>
+
+<dl><dt><strong>Transit</strong> = &lt;Formation.Transit: 3&gt;</dl>
+
+<dl><dt><strong>Wall</strong> = &lt;Formation.Wall: 5&gt;</dl>
+
+<dl><dt><strong>WideWall</strong> = &lt;Formation.WideWall: 6&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Formation-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="MissionEvent">class <strong>MissionEvent</strong></a>(<a href="SimulationInterface.html#Event">Event</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Base&nbsp;class&nbsp;for&nbsp;any&nbsp;events&nbsp;setting&nbsp;up&nbsp;the&nbsp;mission&nbsp;structure.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#MissionEvent">MissionEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MissionEvent-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="MissionEvent-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="MissionEvent_SetVictoryConditions">class <strong>MissionEvent_SetVictoryConditions</strong></a>(<a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Set&nbsp;victory&nbsp;conditions.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#MissionEvent_SetVictoryConditions">MissionEvent_SetVictoryConditions</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent">MissionEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MissionEvent_SetVictoryConditions-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#MissionEvent_SetVictoryConditions-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#MissionEvent_SetVictoryConditions">MissionEvent_SetVictoryConditions</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="MissionEvent_SetVictoryConditions-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="MissionEvent_SpawnBullseye">class <strong>MissionEvent_SpawnBullseye</strong></a>(<a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Spawn&nbsp;a&nbsp;bullseye.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#MissionEvent_SpawnBullseye">MissionEvent_SpawnBullseye</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent">MissionEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MissionEvent_SpawnBullseye-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#MissionEvent_SpawnBullseye-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#MissionEvent_SpawnBullseye">MissionEvent_SpawnBullseye</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="MissionEvent_SpawnBullseye-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="MissionEvent_SpawnEntity">class <strong>MissionEvent_SpawnEntity</strong></a>(<a href="SimulationInterface.html#MissionEvent">MissionEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Abstract&nbsp;base&nbsp;class&nbsp;for&nbsp;any&nbsp;entity&nbsp;spawn&nbsp;event.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent">MissionEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MissionEvent_SpawnEntity-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#MissionEvent_SpawnEntity-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="MissionEvent_SpawnEntity-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="MissionEvent_SpawnFlag">class <strong>MissionEvent_SpawnFlag</strong></a>(<a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Spawn&nbsp;a&nbsp;flag.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#MissionEvent_SpawnFlag">MissionEvent_SpawnFlag</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent">MissionEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MissionEvent_SpawnFlag-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#MissionEvent_SpawnFlag-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#MissionEvent_SpawnFlag">MissionEvent_SpawnFlag</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="MissionEvent_SpawnFlag-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="MissionEvent_SpawnPackage">class <strong>MissionEvent_SpawnPackage</strong></a>(<a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Spawn&nbsp;a&nbsp;package.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#MissionEvent_SpawnPackage">MissionEvent_SpawnPackage</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent">MissionEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MissionEvent_SpawnPackage-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#MissionEvent_SpawnPackage-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#MissionEvent_SpawnPackage">MissionEvent_SpawnPackage</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="MissionEvent_SpawnPackage-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="MissionEvent_SpawnSquadron">class <strong>MissionEvent_SpawnSquadron</strong></a>(<a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Spawn&nbsp;a&nbsp;squadron.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#MissionEvent_SpawnSquadron">MissionEvent_SpawnSquadron</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent">MissionEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MissionEvent_SpawnSquadron-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#MissionEvent_SpawnSquadron-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#MissionEvent_SpawnSquadron">MissionEvent_SpawnSquadron</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="MissionEvent_SpawnSquadron-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="MissionEvent_SpawnUnit">class <strong>MissionEvent_SpawnUnit</strong></a>(<a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Spawn&nbsp;a&nbsp;unit.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#MissionEvent_SpawnUnit">MissionEvent_SpawnUnit</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent_SpawnEntity">MissionEvent_SpawnEntity</a></dd>
+<dd><a href="SimulationInterface.html#MissionEvent">MissionEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MissionEvent_SpawnUnit-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#MissionEvent_SpawnUnit-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#MissionEvent_SpawnUnit">MissionEvent_SpawnUnit</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="MissionEvent_SpawnUnit-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Move_ReachedTarget">class <strong>Move_ReachedTarget</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;move&nbsp;manouver&nbsp;has&nbsp;completed<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Move_ReachedTarget">Move_ReachedTarget</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Move_ReachedTarget-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;operation&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Move_ReachedTarget-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Package">class <strong>Package</strong></a>(<a href="SimulationInterface.html#ControllableGroupEntity">ControllableGroupEntity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">The&nbsp;representation&nbsp;of&nbsp;a&nbsp;package&nbsp;in&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Package">Package</a></dd>
+<dd><a href="SimulationInterface.html#ControllableGroupEntity">ControllableGroupEntity</a></dd>
+<dd><a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a></dd>
+<dd><a href="SimulationInterface.html#Entity">Entity</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Package-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#ControllableGroupEntity">ControllableGroupEntity</a>:<br>
+<dl><dt><strong>Entities</strong></dt>
+<dd><span class="code">The&nbsp;entities&nbsp;that&nbsp;are&nbsp;part&nbsp;of&nbsp;this&nbsp;group.</span></dd>
+</dl>
+<hr>
+Methods inherited from <a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a>:<br>
+<dl><dt><a name="Package-GetAmmo"><strong>GetAmmo</strong></a>(...)</dt><dd><span class="code"><a href="#Package-GetAmmo">GetAmmo</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;ammo&nbsp;this&nbsp;entity&nbsp;has.</span></dd></dl>
+
+<dl><dt><a name="Package-GetEngagementLevel"><strong>GetEngagementLevel</strong></a>(...)</dt><dd><span class="code"><a href="#Package-GetEngagementLevel">GetEngagementLevel</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;current&nbsp;engagement&nbsp;level.</span></dd></dl>
+
+<dl><dt><a name="Package-GetTargetDomains"><strong>GetTargetDomains</strong></a>(...)</dt><dd><span class="code"><a href="#Package-GetTargetDomains">GetTargetDomains</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;domain(s)&nbsp;this&nbsp;entity&nbsp;can&nbsp;target.</span></dd></dl>
+
+<dl><dt><a name="Package-GetTargetEntity"><strong>GetTargetEntity</strong></a>(...)</dt><dd><span class="code"><a href="#Package-GetTargetEntity">GetTargetEntity</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a><br>
+&nbsp;<br>
+The&nbsp;current&nbsp;target&nbsp;entity.</span></dd></dl>
+
+<dl><dt><a name="Package-GetTargetGroup"><strong>GetTargetGroup</strong></a>(...)</dt><dd><span class="code"><a href="#Package-GetTargetGroup">GetTargetGroup</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;SimTargetGroup<br>
+&nbsp;<br>
+The&nbsp;target&nbsp;group&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to&nbsp;(if&nbsp;any)</span></dd></dl>
+
+<dl><dt><a name="Package-GetWeaponsUsageMode"><strong>GetWeaponsUsageMode</strong></a>(...)</dt><dd><span class="code"><a href="#Package-GetWeaponsUsageMode">GetWeaponsUsageMode</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;current&nbsp;weapons&nbsp;usage.</span></dd></dl>
+
+<dl><dt><a name="Package-HasParent"><strong>HasParent</strong></a>(...)</dt><dd><span class="code"><a href="#Package-HasParent">HasParent</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Indicating&nbsp;whether&nbsp;the&nbsp;entity&nbsp;has&nbsp;a&nbsp;parent</span></dd></dl>
+
+<dl><dt><a name="Package-IsAlive"><strong>IsAlive</strong></a>(...)</dt><dd><span class="code"><a href="#Package-IsAlive">IsAlive</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;alive.</span></dd></dl>
+
+<dl><dt><a name="Package-IsDead"><strong>IsDead</strong></a>(...)</dt><dd><span class="code"><a href="#Package-IsDead">IsDead</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;dead.</span></dd></dl>
+
+<dl><dt><a name="Package-SelectWeapons"><strong>SelectWeapons</strong></a>(...)</dt><dd><span class="code"><a href="#Package-SelectWeapons">SelectWeapons</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>,&nbsp;arg0:&nbsp;SimTargetGroup,&nbsp;arg1:&nbsp;bool)&nbsp;-&gt;&nbsp;dict[str,&nbsp;SimulationInterface.<a href="#UnitWeaponData">UnitWeaponData</a>]<br>
+&nbsp;<br>
+Select&nbsp;the&nbsp;weapons&nbsp;that&nbsp;be&nbsp;used&nbsp;for&nbsp;performing&nbsp;an&nbsp;attack.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a>:<br>
+<dl><dt><strong>Controllable</strong></dt>
+<dd><span class="code">Whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;controllable.</span></dd>
+</dl>
+<dl><dt><strong>CurrentManouver</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;manouver&nbsp;this&nbsp;entity&nbsp;is&nbsp;performing.</span></dd>
+</dl>
+<dl><dt><strong>DetectedAdversaries</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;set&nbsp;of&nbsp;adversaries&nbsp;being&nbsp;detected.</span></dd>
+</dl>
+<dl><dt><strong>HasReachedBase</strong></dt>
+<dd><span class="code">A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;we&nbsp;are&nbsp;currently&nbsp;at&nbsp;the&nbsp;base.</span></dd>
+</dl>
+<dl><dt><strong>Parent</strong></dt>
+<dd><span class="code">The&nbsp;parent&nbsp;entity&nbsp;(if&nbsp;any)</span></dd>
+</dl>
+<dl><dt><strong>Vel</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;velocity.</span></dd>
+</dl>
+<hr>
+Methods inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><a name="Package-GetDomain"><strong>GetDomain</strong></a>(...)</dt><dd><span class="code"><a href="#Package-GetDomain">GetDomain</a>(self:&nbsp;SimulationInterface.<a href="#Entity">Entity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a><br>
+&nbsp;<br>
+The&nbsp;domain&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><strong>EntityId</strong></dt>
+<dd><span class="code">Unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Faction</strong></dt>
+<dd><span class="code">The&nbsp;faction&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd>
+</dl>
+<dl><dt><strong>Identifier</strong></dt>
+<dd><span class="code">The&nbsp;human-readable&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Pos</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;position&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Rot</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;rotation&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Package-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlayerEvent">class <strong>PlayerEvent</strong></a>(<a href="SimulationInterface.html#Event">Event</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Base&nbsp;class&nbsp;for&nbsp;any&nbsp;player/agent&nbsp;interactions&nbsp;with&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="PlayerEvent-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;interactions&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="PlayerEvent-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlayerEvent_Abort">class <strong>PlayerEvent_Abort</strong></a>(<a href="SimulationInterface.html#PlayerEvent_CombatManouver">PlayerEvent_CombatManouver</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Abort&nbsp;the&nbsp;current&nbsp;engagement<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#PlayerEvent_Abort">PlayerEvent_Abort</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent_CombatManouver">PlayerEvent_CombatManouver</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="PlayerEvent_Abort-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#PlayerEvent_Abort-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#PlayerEvent_Abort">PlayerEvent_Abort</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;interactions&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="PlayerEvent_Abort-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlayerEvent_CAP">class <strong>PlayerEvent_CAP</strong></a>(<a href="SimulationInterface.html#PlayerEvent_NonCombatManouver">PlayerEvent_NonCombatManouver</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Combat&nbsp;air&nbsp;patrol&nbsp;looped&nbsp;over&nbsp;the&nbsp;supplied&nbsp;spline.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#PlayerEvent_CAP">PlayerEvent_CAP</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent_NonCombatManouver">PlayerEvent_NonCombatManouver</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="PlayerEvent_CAP-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#PlayerEvent_CAP-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#PlayerEvent_CAP">PlayerEvent_CAP</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>Formation</strong></dt>
+<dd><span class="code">The&nbsp;identifier&nbsp;for&nbsp;the&nbsp;formation.</span></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent_NonCombatManouver">PlayerEvent_NonCombatManouver</a>:<br>
+<dl><dt><strong>SplinePoints</strong></dt>
+<dd><span class="code">The&nbsp;spline&nbsp;to&nbsp;follow&nbsp;for&nbsp;this&nbsp;movement.</span></dd>
+</dl>
+<dl><dt><strong>Throttle</strong></dt>
+<dd><span class="code">The&nbsp;throttle&nbsp;setting&nbsp;for&nbsp;this&nbsp;movement.</span></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;interactions&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="PlayerEvent_CAP-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlayerEvent_ChangeFormation">class <strong>PlayerEvent_ChangeFormation</strong></a>(<a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Change&nbsp;formation&nbsp;for&nbsp;this&nbsp;entity.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#PlayerEvent_ChangeFormation">PlayerEvent_ChangeFormation</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="PlayerEvent_ChangeFormation-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>Formation</strong></dt>
+<dd><span class="code">The&nbsp;identifier&nbsp;for&nbsp;the&nbsp;formation.</span></dd>
+</dl>
+<dl><dt><strong>FormationOffsets</strong></dt>
+<dd><span class="code">The&nbsp;actual&nbsp;formation&nbsp;offsets&nbsp;for&nbsp;each&nbsp;individual&nbsp;unit&nbsp;within&nbsp;this&nbsp;formation.</span></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;interactions&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="PlayerEvent_ChangeFormation-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlayerEvent_CombatManouver">class <strong>PlayerEvent_CombatManouver</strong></a>(<a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Abstract&nbsp;class&nbsp;for&nbsp;any&nbsp;combat&nbsp;manouvers.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#PlayerEvent_CombatManouver">PlayerEvent_CombatManouver</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="PlayerEvent_CombatManouver-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;interactions&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="PlayerEvent_CombatManouver-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlayerEvent_Commit">class <strong>PlayerEvent_Commit</strong></a>(<a href="SimulationInterface.html#PlayerEvent_CombatManouver">PlayerEvent_CombatManouver</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Instructs&nbsp;the&nbsp;entity&nbsp;to&nbsp;engage&nbsp;a&nbsp;particular&nbsp;target&nbsp;group.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#PlayerEvent_Commit">PlayerEvent_Commit</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent_CombatManouver">PlayerEvent_CombatManouver</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="PlayerEvent_Commit-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#PlayerEvent_Commit-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#PlayerEvent_Commit">PlayerEvent_Commit</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>ManouverData</strong></dt>
+<dd><span class="code">The&nbsp;data&nbsp;for&nbsp;this&nbsp;manouver</span></dd>
+</dl>
+<dl><dt><strong>TargetGroup</strong></dt>
+<dd><span class="code">The&nbsp;target&nbsp;group&nbsp;we&nbsp;want&nbsp;to&nbsp;engage.</span></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;interactions&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="PlayerEvent_Commit-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlayerEvent_Commit_Sprint">class <strong>PlayerEvent_Commit_Sprint</strong></a>(<a href="SimulationInterface.html#PlayerEvent_CombatManouver">PlayerEvent_CombatManouver</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Instructs&nbsp;the&nbsp;entity&nbsp;to&nbsp;engage&nbsp;a&nbsp;particular&nbsp;target&nbsp;group.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#PlayerEvent_Commit_Sprint">PlayerEvent_Commit_Sprint</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent_CombatManouver">PlayerEvent_CombatManouver</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="PlayerEvent_Commit_Sprint-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#PlayerEvent_Commit_Sprint-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#PlayerEvent_Commit_Sprint">PlayerEvent_Commit_Sprint</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>ManouverData</strong></dt>
+<dd><span class="code">The&nbsp;data&nbsp;for&nbsp;this&nbsp;manouver</span></dd>
+</dl>
+<dl><dt><strong>TargetGroup</strong></dt>
+<dd><span class="code">The&nbsp;target&nbsp;group&nbsp;we&nbsp;want&nbsp;to&nbsp;engage.</span></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;interactions&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="PlayerEvent_Commit_Sprint-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlayerEvent_Move">class <strong>PlayerEvent_Move</strong></a>(<a href="SimulationInterface.html#PlayerEvent_NonCombatManouver">PlayerEvent_NonCombatManouver</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Move&nbsp;towards&nbsp;a&nbsp;specific&nbsp;location&nbsp;over&nbsp;the&nbsp;supplied&nbsp;spline&nbsp;path.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#PlayerEvent_Move">PlayerEvent_Move</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent_NonCombatManouver">PlayerEvent_NonCombatManouver</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="PlayerEvent_Move-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#PlayerEvent_Move-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#PlayerEvent_Move">PlayerEvent_Move</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>Formation</strong></dt>
+<dd><span class="code">The&nbsp;identifier&nbsp;for&nbsp;the&nbsp;formation.</span></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent_NonCombatManouver">PlayerEvent_NonCombatManouver</a>:<br>
+<dl><dt><strong>SplinePoints</strong></dt>
+<dd><span class="code">The&nbsp;spline&nbsp;to&nbsp;follow&nbsp;for&nbsp;this&nbsp;movement.</span></dd>
+</dl>
+<dl><dt><strong>Throttle</strong></dt>
+<dd><span class="code">The&nbsp;throttle&nbsp;setting&nbsp;for&nbsp;this&nbsp;movement.</span></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;interactions&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="PlayerEvent_Move-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlayerEvent_NonCombatManouver">class <strong>PlayerEvent_NonCombatManouver</strong></a>(<a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Abstract&nbsp;class&nbsp;for&nbsp;any&nbsp;non-combat&nbsp;manouvers.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#PlayerEvent_NonCombatManouver">PlayerEvent_NonCombatManouver</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="PlayerEvent_NonCombatManouver-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>SplinePoints</strong></dt>
+<dd><span class="code">The&nbsp;spline&nbsp;to&nbsp;follow&nbsp;for&nbsp;this&nbsp;movement.</span></dd>
+</dl>
+<dl><dt><strong>Throttle</strong></dt>
+<dd><span class="code">The&nbsp;throttle&nbsp;setting&nbsp;for&nbsp;this&nbsp;movement.</span></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;interactions&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="PlayerEvent_NonCombatManouver-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlayerEvent_NonCombatManouverQueue">class <strong>PlayerEvent_NonCombatManouverQueue</strong></a>(<a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Set&nbsp;up&nbsp;a&nbsp;non-combat&nbsp;manouver&nbsp;queue.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#PlayerEvent_NonCombatManouverQueue">PlayerEvent_NonCombatManouverQueue</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="PlayerEvent_NonCombatManouverQueue-AddEvent"><strong>AddEvent</strong></a>(...)</dt><dd><span class="code"><a href="#PlayerEvent_NonCombatManouverQueue-AddEvent">AddEvent</a>(self:&nbsp;SimulationInterface.<a href="#PlayerEvent_NonCombatManouverQueue">PlayerEvent_NonCombatManouverQueue</a>,&nbsp;arg0:&nbsp;SimulationInterface.<a href="#PlayerEvent_NonCombatManouver">PlayerEvent_NonCombatManouver</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Add&nbsp;a&nbsp;non-combat&nbsp;manouver&nbsp;to&nbsp;the&nbsp;queue.</span></dd></dl>
+
+<dl><dt><a name="PlayerEvent_NonCombatManouverQueue-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#PlayerEvent_NonCombatManouverQueue-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#PlayerEvent_NonCombatManouverQueue">PlayerEvent_NonCombatManouverQueue</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;interactions&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="PlayerEvent_NonCombatManouverQueue-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="PlayerEvent_RTB">class <strong>PlayerEvent_RTB</strong></a>(<a href="SimulationInterface.html#PlayerEvent_NonCombatManouver">PlayerEvent_NonCombatManouver</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Return&nbsp;to&nbsp;base&nbsp;at&nbsp;a&nbsp;specific&nbsp;location&nbsp;over&nbsp;the&nbsp;supplied&nbsp;spline&nbsp;path.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#PlayerEvent_RTB">PlayerEvent_RTB</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent_NonCombatManouver">PlayerEvent_NonCombatManouver</a></dd>
+<dd><a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a></dd>
+<dd><a href="SimulationInterface.html#Event">Event</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="PlayerEvent_RTB-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#PlayerEvent_RTB-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#PlayerEvent_RTB">PlayerEvent_RTB</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Constructor</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>Formation</strong></dt>
+<dd><span class="code">The&nbsp;identifier&nbsp;for&nbsp;the&nbsp;formation.</span></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent_NonCombatManouver">PlayerEvent_NonCombatManouver</a>:<br>
+<dl><dt><strong>SplinePoints</strong></dt>
+<dd><span class="code">The&nbsp;spline&nbsp;to&nbsp;follow&nbsp;for&nbsp;this&nbsp;movement.</span></dd>
+</dl>
+<dl><dt><strong>Throttle</strong></dt>
+<dd><span class="code">The&nbsp;throttle&nbsp;setting&nbsp;for&nbsp;this&nbsp;movement.</span></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="SimulationInterface.html#PlayerEvent">PlayerEvent</a>:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;interactions&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="PlayerEvent_RTB-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Projectile">class <strong>Projectile</strong></a>(<a href="SimulationInterface.html#Entity">Entity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">The&nbsp;representation&nbsp;of&nbsp;a&nbsp;prjectile&nbsp;in&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Projectile">Projectile</a></dd>
+<dd><a href="SimulationInterface.html#Entity">Entity</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Projectile-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Methods inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><a name="Projectile-GetDomain"><strong>GetDomain</strong></a>(...)</dt><dd><span class="code"><a href="#Projectile-GetDomain">GetDomain</a>(self:&nbsp;SimulationInterface.<a href="#Entity">Entity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a><br>
+&nbsp;<br>
+The&nbsp;domain&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><strong>EntityId</strong></dt>
+<dd><span class="code">Unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Faction</strong></dt>
+<dd><span class="code">The&nbsp;faction&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd>
+</dl>
+<dl><dt><strong>Identifier</strong></dt>
+<dd><span class="code">The&nbsp;human-readable&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Pos</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;position&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Rot</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;rotation&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Projectile-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="ProjectileExploded">class <strong>ProjectileExploded</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;projectile&nbsp;has&nbsp;exploded<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#ProjectileExploded">ProjectileExploded</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ProjectileExploded-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>HitTarget</strong></dt>
+<dd><span class="code">A&nbsp;boolean&nbsp;indicating&nbsp;whether&nbsp;the&nbsp;projectile&nbsp;has&nbsp;hit&nbsp;its&nbsp;target.</span></dd>
+</dl>
+<dl><dt><strong>Projectile</strong></dt>
+<dd><span class="code">The&nbsp;projectile.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="ProjectileExploded-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Quat4">class <strong>Quat4</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;quaternion.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Quat4">Quat4</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Quat4-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#Quat4-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#Quat4-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#Quat4">Quat4</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#Quat4-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#Quat4">Quat4</a>,&nbsp;arg0:&nbsp;float,&nbsp;arg1:&nbsp;float,&nbsp;arg2:&nbsp;float,&nbsp;arg3:&nbsp;float)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>w</strong></dt>
+</dl>
+<dl><dt><strong>x</strong></dt>
+</dl>
+<dl><dt><strong>y</strong></dt>
+</dl>
+<dl><dt><strong>z</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Quat4-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="RTB_ReachedTarget">class <strong>RTB_ReachedTarget</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;return&nbsp;to&nbsp;base&nbsp;manouver&nbsp;has&nbsp;completed.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#RTB_ReachedTarget">RTB_ReachedTarget</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="RTB_ReachedTarget-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Entity</strong></dt>
+<dd><span class="code">The&nbsp;entity&nbsp;this&nbsp;operation&nbsp;involves.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="RTB_ReachedTarget-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="SimulationConfig">class <strong>SimulationConfig</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Data&nbsp;for&nbsp;initializing&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#SimulationConfig">SimulationConfig</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="SimulationConfig-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#SimulationConfig-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#SimulationConfig">SimulationConfig</a>)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>LogJSON</strong></dt>
+<dd><span class="code">Boolean&nbsp;indicating&nbsp;whether&nbsp;we&nbsp;want&nbsp;to&nbsp;set&nbsp;up&nbsp;JSON&nbsp;logging.</span></dd>
+</dl>
+<dl><dt><strong>Name</strong></dt>
+<dd><span class="code">The&nbsp;internal&nbsp;name&nbsp;for&nbsp;this&nbsp;simulation.</span></dd>
+</dl>
+<dl><dt><strong>RandomSeed</strong></dt>
+<dd><span class="code">The&nbsp;random&nbsp;seed.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="SimulationConfig-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="SimulationData">class <strong>SimulationData</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#SimulationData">SimulationData</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="SimulationData-AddPlayerEvent"><strong>AddPlayerEvent</strong></a>(...)</dt><dd><span class="code"><a href="#SimulationData-AddPlayerEvent">AddPlayerEvent</a>(self:&nbsp;SimulationInterface.<a href="#SimulationData">SimulationData</a>,&nbsp;arg0:&nbsp;SimPlayerEvent)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Add&nbsp;a&nbsp;player&nbsp;event.</span></dd></dl>
+
+<dl><dt><a name="SimulationData-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#SimulationData-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#SimulationData">SimulationData</a>)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="SimulationData-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="SimulationEvent">class <strong>SimulationEvent</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Base&nbsp;class&nbsp;for&nbsp;any&nbsp;events&nbsp;generated&nbsp;by&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="SimulationEvent-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="SimulationEvent-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Squadron">class <strong>Squadron</strong></a>(<a href="SimulationInterface.html#ControllableGroupEntity">ControllableGroupEntity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">The&nbsp;representation&nbsp;of&nbsp;a&nbsp;squadron&nbsp;in&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Squadron">Squadron</a></dd>
+<dd><a href="SimulationInterface.html#ControllableGroupEntity">ControllableGroupEntity</a></dd>
+<dd><a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a></dd>
+<dd><a href="SimulationInterface.html#Entity">Entity</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Squadron-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#ControllableGroupEntity">ControllableGroupEntity</a>:<br>
+<dl><dt><strong>Entities</strong></dt>
+<dd><span class="code">The&nbsp;entities&nbsp;that&nbsp;are&nbsp;part&nbsp;of&nbsp;this&nbsp;group.</span></dd>
+</dl>
+<hr>
+Methods inherited from <a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a>:<br>
+<dl><dt><a name="Squadron-GetAmmo"><strong>GetAmmo</strong></a>(...)</dt><dd><span class="code"><a href="#Squadron-GetAmmo">GetAmmo</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;ammo&nbsp;this&nbsp;entity&nbsp;has.</span></dd></dl>
+
+<dl><dt><a name="Squadron-GetEngagementLevel"><strong>GetEngagementLevel</strong></a>(...)</dt><dd><span class="code"><a href="#Squadron-GetEngagementLevel">GetEngagementLevel</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;current&nbsp;engagement&nbsp;level.</span></dd></dl>
+
+<dl><dt><a name="Squadron-GetTargetDomains"><strong>GetTargetDomains</strong></a>(...)</dt><dd><span class="code"><a href="#Squadron-GetTargetDomains">GetTargetDomains</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;domain(s)&nbsp;this&nbsp;entity&nbsp;can&nbsp;target.</span></dd></dl>
+
+<dl><dt><a name="Squadron-GetTargetEntity"><strong>GetTargetEntity</strong></a>(...)</dt><dd><span class="code"><a href="#Squadron-GetTargetEntity">GetTargetEntity</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a><br>
+&nbsp;<br>
+The&nbsp;current&nbsp;target&nbsp;entity.</span></dd></dl>
+
+<dl><dt><a name="Squadron-GetTargetGroup"><strong>GetTargetGroup</strong></a>(...)</dt><dd><span class="code"><a href="#Squadron-GetTargetGroup">GetTargetGroup</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;SimTargetGroup<br>
+&nbsp;<br>
+The&nbsp;target&nbsp;group&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to&nbsp;(if&nbsp;any)</span></dd></dl>
+
+<dl><dt><a name="Squadron-GetWeaponsUsageMode"><strong>GetWeaponsUsageMode</strong></a>(...)</dt><dd><span class="code"><a href="#Squadron-GetWeaponsUsageMode">GetWeaponsUsageMode</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;current&nbsp;weapons&nbsp;usage.</span></dd></dl>
+
+<dl><dt><a name="Squadron-HasParent"><strong>HasParent</strong></a>(...)</dt><dd><span class="code"><a href="#Squadron-HasParent">HasParent</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Indicating&nbsp;whether&nbsp;the&nbsp;entity&nbsp;has&nbsp;a&nbsp;parent</span></dd></dl>
+
+<dl><dt><a name="Squadron-IsAlive"><strong>IsAlive</strong></a>(...)</dt><dd><span class="code"><a href="#Squadron-IsAlive">IsAlive</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;alive.</span></dd></dl>
+
+<dl><dt><a name="Squadron-IsDead"><strong>IsDead</strong></a>(...)</dt><dd><span class="code"><a href="#Squadron-IsDead">IsDead</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;dead.</span></dd></dl>
+
+<dl><dt><a name="Squadron-SelectWeapons"><strong>SelectWeapons</strong></a>(...)</dt><dd><span class="code"><a href="#Squadron-SelectWeapons">SelectWeapons</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>,&nbsp;arg0:&nbsp;SimTargetGroup,&nbsp;arg1:&nbsp;bool)&nbsp;-&gt;&nbsp;dict[str,&nbsp;SimulationInterface.<a href="#UnitWeaponData">UnitWeaponData</a>]<br>
+&nbsp;<br>
+Select&nbsp;the&nbsp;weapons&nbsp;that&nbsp;be&nbsp;used&nbsp;for&nbsp;performing&nbsp;an&nbsp;attack.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a>:<br>
+<dl><dt><strong>Controllable</strong></dt>
+<dd><span class="code">Whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;controllable.</span></dd>
+</dl>
+<dl><dt><strong>CurrentManouver</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;manouver&nbsp;this&nbsp;entity&nbsp;is&nbsp;performing.</span></dd>
+</dl>
+<dl><dt><strong>DetectedAdversaries</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;set&nbsp;of&nbsp;adversaries&nbsp;being&nbsp;detected.</span></dd>
+</dl>
+<dl><dt><strong>HasReachedBase</strong></dt>
+<dd><span class="code">A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;we&nbsp;are&nbsp;currently&nbsp;at&nbsp;the&nbsp;base.</span></dd>
+</dl>
+<dl><dt><strong>Parent</strong></dt>
+<dd><span class="code">The&nbsp;parent&nbsp;entity&nbsp;(if&nbsp;any)</span></dd>
+</dl>
+<dl><dt><strong>Vel</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;velocity.</span></dd>
+</dl>
+<hr>
+Methods inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><a name="Squadron-GetDomain"><strong>GetDomain</strong></a>(...)</dt><dd><span class="code"><a href="#Squadron-GetDomain">GetDomain</a>(self:&nbsp;SimulationInterface.<a href="#Entity">Entity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a><br>
+&nbsp;<br>
+The&nbsp;domain&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><strong>EntityId</strong></dt>
+<dd><span class="code">Unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Faction</strong></dt>
+<dd><span class="code">The&nbsp;faction&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd>
+</dl>
+<dl><dt><strong>Identifier</strong></dt>
+<dd><span class="code">The&nbsp;human-readable&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Pos</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;position&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Rot</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;rotation&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Squadron-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="TargetDomain">class <strong>TargetDomain</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#TargetDomain">TargetDomain</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TargetDomain-__eq__"><strong>__eq__</strong></a>(...)</dt><dd><span class="code"><a href="#TargetDomain-__eq__">__eq__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;bool</span></dd></dl>
+
+<dl><dt><a name="TargetDomain-__getstate__"><strong>__getstate__</strong></a>(...)</dt><dd><span class="code"><a href="#TargetDomain-__getstate__">__getstate__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="TargetDomain-__hash__"><strong>__hash__</strong></a>(...)</dt><dd><span class="code"><a href="#TargetDomain-__hash__">__hash__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="TargetDomain-__index__"><strong>__index__</strong></a>(...)</dt><dd><span class="code"><a href="#TargetDomain-__index__">__index__</a>(self:&nbsp;SimulationInterface.<a href="#TargetDomain">TargetDomain</a>,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="TargetDomain-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#TargetDomain-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#TargetDomain">TargetDomain</a>,&nbsp;value:&nbsp;int)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="TargetDomain-__int__"><strong>__int__</strong></a>(...)</dt><dd><span class="code"><a href="#TargetDomain-__int__">__int__</a>(self:&nbsp;SimulationInterface.<a href="#TargetDomain">TargetDomain</a>,&nbsp;/)&nbsp;-&gt;&nbsp;int</span></dd></dl>
+
+<dl><dt><a name="TargetDomain-__ne__"><strong>__ne__</strong></a>(...)</dt><dd><span class="code"><a href="#TargetDomain-__ne__">__ne__</a>(self:&nbsp;object,&nbsp;other:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;bool</span></dd></dl>
+
+<dl><dt><a name="TargetDomain-__repr__"><strong>__repr__</strong></a>(...)</dt><dd><span class="code"><a href="#TargetDomain-__repr__">__repr__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd></dl>
+
+<dl><dt><a name="TargetDomain-__setstate__"><strong>__setstate__</strong></a>(...)</dt><dd><span class="code"><a href="#TargetDomain-__setstate__">__setstate__</a>(self:&nbsp;SimulationInterface.<a href="#TargetDomain">TargetDomain</a>,&nbsp;state:&nbsp;int,&nbsp;/)&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<dl><dt><a name="TargetDomain-__str__"><strong>__str__</strong></a>(...)</dt><dd><span class="code"><a href="#TargetDomain-__str__">__str__</a>(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__members__</strong></dt>
+</dl>
+<dl><dt><strong>name</strong></dt>
+<dd><span class="code">name(self:&nbsp;object,&nbsp;/)&nbsp;-&gt;&nbsp;str</span></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Air</strong> = &lt;TargetDomain.Air: 2&gt;</dl>
+
+<dl><dt><strong>Land</strong> = &lt;TargetDomain.Land: 1&gt;</dl>
+
+<dl><dt><strong>None</strong> = &lt;TargetDomain.None: 0&gt;</dl>
+
+<dl><dt><strong>Sea</strong> = &lt;TargetDomain.Sea: 4&gt;</dl>
+
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TargetDomain-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="TargetGroup">class <strong>TargetGroup</strong></a>(<a href="SimulationInterface.html#Entity">Entity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">The&nbsp;representation&nbsp;of&nbsp;a&nbsp;target&nbsp;group&nbsp;in&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#TargetGroup">TargetGroup</a></dd>
+<dd><a href="SimulationInterface.html#Entity">Entity</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TargetGroup-GetDetectedEntities"><strong>GetDetectedEntities</strong></a>(...)</dt><dd><span class="code"><a href="#TargetGroup-GetDetectedEntities">GetDetectedEntities</a>(self:&nbsp;SimulationInterface.<a href="#TargetGroup">TargetGroup</a>)&nbsp;-&gt;&nbsp;set[SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>]<br>
+&nbsp;<br>
+The&nbsp;top-level&nbsp;entities&nbsp;in&nbsp;this&nbsp;targetgroup.</span></dd></dl>
+
+<dl><dt><a name="TargetGroup-NumAliveUnits"><strong>NumAliveUnits</strong></a>(...)</dt><dd><span class="code"><a href="#TargetGroup-NumAliveUnits">NumAliveUnits</a>(self:&nbsp;SimulationInterface.<a href="#TargetGroup">TargetGroup</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;number&nbsp;of&nbsp;alive&nbsp;units&nbsp;in&nbsp;this&nbsp;targetgroup.</span></dd></dl>
+
+<dl><dt><a name="TargetGroup-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Units</strong></dt>
+<dd><span class="code">The&nbsp;units&nbsp;this&nbsp;target&nbsp;group&nbsp;contains.</span></dd>
+</dl>
+<hr>
+Methods inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><a name="TargetGroup-GetDomain"><strong>GetDomain</strong></a>(...)</dt><dd><span class="code"><a href="#TargetGroup-GetDomain">GetDomain</a>(self:&nbsp;SimulationInterface.<a href="#Entity">Entity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a><br>
+&nbsp;<br>
+The&nbsp;domain&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><strong>EntityId</strong></dt>
+<dd><span class="code">Unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Faction</strong></dt>
+<dd><span class="code">The&nbsp;faction&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd>
+</dl>
+<dl><dt><strong>Identifier</strong></dt>
+<dd><span class="code">The&nbsp;human-readable&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Pos</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;position&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Rot</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;rotation&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TargetGroup-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="TargetGroupAdversaryAdded">class <strong>TargetGroupAdversaryAdded</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">An&nbsp;additional&nbsp;adversary&nbsp;has&nbsp;been&nbsp;added&nbsp;to&nbsp;the&nbsp;target&nbsp;group.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#TargetGroupAdversaryAdded">TargetGroupAdversaryAdded</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TargetGroupAdversaryAdded-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Adversary</strong></dt>
+<dd><span class="code">The&nbsp;adversary&nbsp;that&nbsp;was&nbsp;added.</span></dd>
+</dl>
+<dl><dt><strong>TargetGroup</strong></dt>
+<dd><span class="code">The&nbsp;target&nbsp;group&nbsp;this&nbsp;involves</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TargetGroupAdversaryAdded-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="TargetGroupAdversaryRemoved">class <strong>TargetGroupAdversaryRemoved</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">An&nbsp;adversary&nbsp;has&nbsp;been&nbsp;removed&nbsp;from&nbsp;the&nbsp;target&nbsp;group.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#TargetGroupAdversaryRemoved">TargetGroupAdversaryRemoved</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TargetGroupAdversaryRemoved-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Adversary</strong></dt>
+<dd><span class="code">The&nbsp;adversary&nbsp;that&nbsp;was&nbsp;removed.</span></dd>
+</dl>
+<dl><dt><strong>TargetGroup</strong></dt>
+<dd><span class="code">The&nbsp;target&nbsp;group&nbsp;this&nbsp;involves</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="TargetGroupAdversaryRemoved-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Unit">class <strong>Unit</strong></a>(<a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">The&nbsp;representation&nbsp;of&nbsp;a&nbsp;single&nbsp;unit&nbsp;in&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Unit">Unit</a></dd>
+<dd><a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a></dd>
+<dd><a href="SimulationInterface.html#Entity">Entity</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Unit-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Health</strong></dt>
+<dd><span class="code">The&nbsp;amount&nbsp;of&nbsp;health&nbsp;this&nbsp;unit&nbsp;has.</span></dd>
+</dl>
+<hr>
+Methods inherited from <a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a>:<br>
+<dl><dt><a name="Unit-GetAmmo"><strong>GetAmmo</strong></a>(...)</dt><dd><span class="code"><a href="#Unit-GetAmmo">GetAmmo</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;ammo&nbsp;this&nbsp;entity&nbsp;has.</span></dd></dl>
+
+<dl><dt><a name="Unit-GetEngagementLevel"><strong>GetEngagementLevel</strong></a>(...)</dt><dd><span class="code"><a href="#Unit-GetEngagementLevel">GetEngagementLevel</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;current&nbsp;engagement&nbsp;level.</span></dd></dl>
+
+<dl><dt><a name="Unit-GetTargetDomains"><strong>GetTargetDomains</strong></a>(...)</dt><dd><span class="code"><a href="#Unit-GetTargetDomains">GetTargetDomains</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;domain(s)&nbsp;this&nbsp;entity&nbsp;can&nbsp;target.</span></dd></dl>
+
+<dl><dt><a name="Unit-GetTargetEntity"><strong>GetTargetEntity</strong></a>(...)</dt><dd><span class="code"><a href="#Unit-GetTargetEntity">GetTargetEntity</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a><br>
+&nbsp;<br>
+The&nbsp;current&nbsp;target&nbsp;entity.</span></dd></dl>
+
+<dl><dt><a name="Unit-GetTargetGroup"><strong>GetTargetGroup</strong></a>(...)</dt><dd><span class="code"><a href="#Unit-GetTargetGroup">GetTargetGroup</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;SimTargetGroup<br>
+&nbsp;<br>
+The&nbsp;target&nbsp;group&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to&nbsp;(if&nbsp;any)</span></dd></dl>
+
+<dl><dt><a name="Unit-GetWeaponsUsageMode"><strong>GetWeaponsUsageMode</strong></a>(...)</dt><dd><span class="code"><a href="#Unit-GetWeaponsUsageMode">GetWeaponsUsageMode</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+The&nbsp;current&nbsp;weapons&nbsp;usage.</span></dd></dl>
+
+<dl><dt><a name="Unit-HasParent"><strong>HasParent</strong></a>(...)</dt><dd><span class="code"><a href="#Unit-HasParent">HasParent</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Indicating&nbsp;whether&nbsp;the&nbsp;entity&nbsp;has&nbsp;a&nbsp;parent</span></dd></dl>
+
+<dl><dt><a name="Unit-IsAlive"><strong>IsAlive</strong></a>(...)</dt><dd><span class="code"><a href="#Unit-IsAlive">IsAlive</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;alive.</span></dd></dl>
+
+<dl><dt><a name="Unit-IsDead"><strong>IsDead</strong></a>(...)</dt><dd><span class="code"><a href="#Unit-IsDead">IsDead</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;dead.</span></dd></dl>
+
+<dl><dt><a name="Unit-SelectWeapons"><strong>SelectWeapons</strong></a>(...)</dt><dd><span class="code"><a href="#Unit-SelectWeapons">SelectWeapons</a>(self:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>,&nbsp;arg0:&nbsp;SimTargetGroup,&nbsp;arg1:&nbsp;bool)&nbsp;-&gt;&nbsp;dict[str,&nbsp;SimulationInterface.<a href="#UnitWeaponData">UnitWeaponData</a>]<br>
+&nbsp;<br>
+Select&nbsp;the&nbsp;weapons&nbsp;that&nbsp;be&nbsp;used&nbsp;for&nbsp;performing&nbsp;an&nbsp;attack.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#ControllableEntity">ControllableEntity</a>:<br>
+<dl><dt><strong>Controllable</strong></dt>
+<dd><span class="code">Whether&nbsp;this&nbsp;entity&nbsp;is&nbsp;controllable.</span></dd>
+</dl>
+<dl><dt><strong>CurrentManouver</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;manouver&nbsp;this&nbsp;entity&nbsp;is&nbsp;performing.</span></dd>
+</dl>
+<dl><dt><strong>DetectedAdversaries</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;set&nbsp;of&nbsp;adversaries&nbsp;being&nbsp;detected.</span></dd>
+</dl>
+<dl><dt><strong>HasReachedBase</strong></dt>
+<dd><span class="code">A&nbsp;boolean&nbsp;value&nbsp;whether&nbsp;we&nbsp;are&nbsp;currently&nbsp;at&nbsp;the&nbsp;base.</span></dd>
+</dl>
+<dl><dt><strong>Parent</strong></dt>
+<dd><span class="code">The&nbsp;parent&nbsp;entity&nbsp;(if&nbsp;any)</span></dd>
+</dl>
+<dl><dt><strong>Vel</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;velocity.</span></dd>
+</dl>
+<hr>
+Methods inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><a name="Unit-GetDomain"><strong>GetDomain</strong></a>(...)</dt><dd><span class="code"><a href="#Unit-GetDomain">GetDomain</a>(self:&nbsp;SimulationInterface.<a href="#Entity">Entity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a><br>
+&nbsp;<br>
+The&nbsp;domain&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><strong>EntityId</strong></dt>
+<dd><span class="code">Unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Faction</strong></dt>
+<dd><span class="code">The&nbsp;faction&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd>
+</dl>
+<dl><dt><strong>Identifier</strong></dt>
+<dd><span class="code">The&nbsp;human-readable&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Pos</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;position&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Rot</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;rotation&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Unit-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="UnitCombatManouverData">class <strong>UnitCombatManouverData</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">Data&nbsp;for&nbsp;combat&nbsp;manouvers.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#UnitCombatManouverData">UnitCombatManouverData</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="UnitCombatManouverData-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>Engagement</strong></dt>
+<dd><span class="code">How&nbsp;to&nbsp;engage</span></dd>
+</dl>
+<dl><dt><strong>Formation</strong></dt>
+<dd><span class="code">The&nbsp;formation.</span></dd>
+</dl>
+<dl><dt><strong>ShootDistance</strong></dt>
+<dd><span class="code">The&nbsp;distance&nbsp;from&nbsp;which&nbsp;we&nbsp;will&nbsp;shoot.</span></dd>
+</dl>
+<dl><dt><strong>Throttle</strong></dt>
+<dd><span class="code">The&nbsp;throttle.</span></dd>
+</dl>
+<dl><dt><strong>WeaponUsage</strong></dt>
+<dd><span class="code">How&nbsp;to&nbsp;use&nbsp;weapons.</span></dd>
+</dl>
+<dl><dt><strong>Weapons</strong></dt>
+<dd><span class="code">Which&nbsp;weapons&nbsp;to&nbsp;use.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="UnitCombatManouverData-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="UnitKilled">class <strong>UnitKilled</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;unit&nbsp;was&nbsp;killed.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#UnitKilled">UnitKilled</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="UnitKilled-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Instigator</strong></dt>
+<dd><span class="code">The&nbsp;instigator&nbsp;for&nbsp;this&nbsp;kill.</span></dd>
+</dl>
+<dl><dt><strong>Target</strong></dt>
+<dd><span class="code">The&nbsp;unit&nbsp;that&nbsp;was&nbsp;killed.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="UnitKilled-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="UnitProjectileData">class <strong>UnitProjectileData</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#UnitProjectileData">UnitProjectileData</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="UnitProjectileData-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Accuracy</strong></dt>
+<dd><span class="code">Accuracy.</span></dd>
+</dl>
+<dl><dt><strong>AutonomousDistance</strong></dt>
+<dd><span class="code">AutonomousDistance.</span></dd>
+</dl>
+<dl><dt><strong>BlastRadius</strong></dt>
+<dd><span class="code">BlastRadius.</span></dd>
+</dl>
+<dl><dt><strong>Damage</strong></dt>
+<dd><span class="code">Damage.</span></dd>
+</dl>
+<dl><dt><strong>RadarCrossSection</strong></dt>
+<dd><span class="code">RadarCrossSection.</span></dd>
+</dl>
+<dl><dt><strong>Range</strong></dt>
+<dd><span class="code">Range.</span></dd>
+</dl>
+<dl><dt><strong>Speed</strong></dt>
+<dd><span class="code">Speed.</span></dd>
+</dl>
+<dl><dt><strong>TargetDomains</strong></dt>
+<dd><span class="code">TargetDomains.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="UnitProjectileData-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="UnitWeaponData">class <strong>UnitWeaponData</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor"><span class="code">&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#UnitWeaponData">UnitWeaponData</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="UnitWeaponData-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Ammo</strong></dt>
+<dd><span class="code">Ammo&nbsp;remaining.</span></dd>
+</dl>
+<dl><dt><strong>Projectile</strong></dt>
+<dd><span class="code">Projectile&nbsp;data.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="UnitWeaponData-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Vector3">class <strong>Vector3</strong></a>(pybind11_builtins.pybind11_object)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">A&nbsp;3d&nbsp;vector.&nbsp;x&nbsp;=&nbsp;north/south,&nbsp;y&nbsp;=&nbsp;east/west,&nbsp;z=up/down<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Vector3">Vector3</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Vector3-__init__"><strong>__init__</strong></a>(...)</dt><dd><span class="code"><a href="#Vector3-__init__">__init__</a>(*args,&nbsp;**kwargs)<br>
+Overloaded&nbsp;function.<br>
+&nbsp;<br>
+1.&nbsp;<a href="#Vector3-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#Vector3">Vector3</a>)&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+2.&nbsp;<a href="#Vector3-__init__">__init__</a>(self:&nbsp;SimulationInterface.<a href="#Vector3">Vector3</a>,&nbsp;arg0:&nbsp;Annotated[list[float],&nbsp;FixedSize(3)])&nbsp;-&gt;&nbsp;None</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>x</strong></dt>
+</dl>
+<dl><dt><strong>y</strong></dt>
+</dl>
+<dl><dt><strong>z</strong></dt>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Vector3-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Victory">class <strong>Victory</strong></a>(<a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Victory">Victory</a>&nbsp;was&nbsp;achieved<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#Victory">Victory</a></dd>
+<dd><a href="SimulationInterface.html#SimulationEvent">SimulationEvent</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Victory-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>Score</strong></dt>
+<dd><span class="code">The&nbsp;score&nbsp;for&nbsp;the&nbsp;victor.</span></dd>
+</dl>
+<dl><dt><strong>VictorFaction</strong></dt>
+<dd><span class="code">The&nbsp;faction&nbsp;that&nbsp;was&nbsp;victorious.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="Victory-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="VictoryConditions">class <strong>VictoryConditions</strong></a>(<a href="SimulationInterface.html#Entity">Entity</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">The&nbsp;representation&nbsp;of&nbsp;the&nbsp;victory&nbsp;conditions&nbsp;for&nbsp;a&nbsp;faction&nbsp;in&nbsp;the&nbsp;simulation.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="SimulationInterface.html#VictoryConditions">VictoryConditions</a></dd>
+<dd><a href="SimulationInterface.html#Entity">Entity</a></dd>
+<dd>pybind11_builtins.pybind11_object</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="VictoryConditions-ComputeScore"><strong>ComputeScore</strong></a>(...)</dt><dd><span class="code"><a href="#VictoryConditions-ComputeScore">ComputeScore</a>(self:&nbsp;SimulationInterface.<a href="#VictoryConditions">VictoryConditions</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Compute&nbsp;the&nbsp;current&nbsp;score&nbsp;for&nbsp;this&nbsp;faction,&nbsp;presuming&nbsp;that&nbsp;the&nbsp;victory&nbsp;conditions&nbsp;have&nbsp;been&nbsp;met.</span></dd></dl>
+
+<dl><dt><a name="VictoryConditions-GetMissionEntityPriority"><strong>GetMissionEntityPriority</strong></a>(...)</dt><dd><span class="code"><a href="#VictoryConditions-GetMissionEntityPriority">GetMissionEntityPriority</a>(self:&nbsp;SimulationInterface.<a href="#VictoryConditions">VictoryConditions</a>,&nbsp;arg0:&nbsp;SimulationInterface.<a href="#ControllableEntity">ControllableEntity</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Get&nbsp;the&nbsp;mission&nbsp;priority&nbsp;for&nbsp;this&nbsp;entity.</span></dd></dl>
+
+<dl><dt><a name="VictoryConditions-GetMissionTargetPriority"><strong>GetMissionTargetPriority</strong></a>(...)</dt><dd><span class="code"><a href="#VictoryConditions-GetMissionTargetPriority">GetMissionTargetPriority</a>(self:&nbsp;SimulationInterface.<a href="#VictoryConditions">VictoryConditions</a>,&nbsp;arg0:&nbsp;SimulationInterface.<a href="#TargetGroup">TargetGroup</a>)&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Get&nbsp;the&nbsp;mission&nbsp;priority&nbsp;for&nbsp;this&nbsp;target&nbsp;group.</span></dd></dl>
+
+<dl><dt><a name="VictoryConditions-VictoryConditionsMet"><strong>VictoryConditionsMet</strong></a>(...)</dt><dd><span class="code"><a href="#VictoryConditions-VictoryConditionsMet">VictoryConditionsMet</a>(self:&nbsp;SimulationInterface.<a href="#VictoryConditions">VictoryConditions</a>)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Indicating&nbsp;whether&nbsp;victory&nbsp;conditions&nbsp;have&nbsp;been&nbsp;met.</span></dd></dl>
+
+<dl><dt><a name="VictoryConditions-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>KeepAlive</strong></dt>
+<dd><span class="code">The&nbsp;entities&nbsp;that&nbsp;must&nbsp;be&nbsp;kept&nbsp;alive.</span></dd>
+</dl>
+<dl><dt><strong>Kill</strong></dt>
+<dd><span class="code">The&nbsp;entities&nbsp;that&nbsp;must&nbsp;be&nbsp;killed.</span></dd>
+</dl>
+<hr>
+Methods inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><a name="VictoryConditions-GetDomain"><strong>GetDomain</strong></a>(...)</dt><dd><span class="code"><a href="#VictoryConditions-GetDomain">GetDomain</a>(self:&nbsp;SimulationInterface.<a href="#Entity">Entity</a>)&nbsp;-&gt;&nbsp;SimulationInterface.<a href="#EntityDomain">EntityDomain</a><br>
+&nbsp;<br>
+The&nbsp;domain&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="SimulationInterface.html#Entity">Entity</a>:<br>
+<dl><dt><strong>EntityId</strong></dt>
+<dd><span class="code">Unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Faction</strong></dt>
+<dd><span class="code">The&nbsp;faction&nbsp;this&nbsp;entity&nbsp;belongs&nbsp;to.</span></dd>
+</dl>
+<dl><dt><strong>Identifier</strong></dt>
+<dd><span class="code">The&nbsp;human-readable&nbsp;identifier&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Pos</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;position&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<dl><dt><strong>Rot</strong></dt>
+<dd><span class="code">The&nbsp;current&nbsp;rotation&nbsp;for&nbsp;this&nbsp;entity.</span></dd>
+</dl>
+<hr>
+Static methods inherited from pybind11_builtins.pybind11_object:<br>
+<dl><dt><a name="VictoryConditions-__new__"><strong>__new__</strong></a>(*args, **kwargs)<span class="grey"><span class="heading-text"> from pybind11_builtins.pybind11_type</span></span></dt><dd><span class="code">Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-CreateSimulation"><strong>CreateSimulation</strong></a>(...)<span class="grey"><span class="heading-text"> method of builtins.PyCapsule instance</span></span></dt><dd><span class="code"><a href="#-CreateSimulation">CreateSimulation</a>(arg0:&nbsp;SimulationInterface.<a href="#SimulationConfig">SimulationConfig</a>)&nbsp;-&gt;&nbsp;capsule<br>
+&nbsp;<br>
+Create&nbsp;a&nbsp;simulation.</span></dd></dl>
+ <dl><dt><a name="-CreateSimulationFromData"><strong>CreateSimulationFromData</strong></a>(...)<span class="grey"><span class="heading-text"> method of builtins.PyCapsule instance</span></span></dt><dd><span class="code"><a href="#-CreateSimulationFromData">CreateSimulationFromData</a>(arg0:&nbsp;str)&nbsp;-&gt;&nbsp;capsule<br>
+&nbsp;<br>
+Create&nbsp;a&nbsp;simulation&nbsp;from&nbsp;json&nbsp;data.</span></dd></dl>
+ <dl><dt><a name="-Deinitialize"><strong>Deinitialize</strong></a>(...)<span class="grey"><span class="heading-text"> method of builtins.PyCapsule instance</span></span></dt><dd><span class="code"><a href="#-Deinitialize">Deinitialize</a>()&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Deinitialize&nbsp;the&nbsp;library.</span></dd></dl>
+ <dl><dt><a name="-DestroySimulation"><strong>DestroySimulation</strong></a>(...)<span class="grey"><span class="heading-text"> method of builtins.PyCapsule instance</span></span></dt><dd><span class="code"><a href="#-DestroySimulation">DestroySimulation</a>(arg0:&nbsp;capsule)&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Destroy&nbsp;a&nbsp;simulation.</span></dd></dl>
+ <dl><dt><a name="-ExportJSON"><strong>ExportJSON</strong></a>(...)<span class="grey"><span class="heading-text"> method of builtins.PyCapsule instance</span></span></dt><dd><span class="code"><a href="#-ExportJSON">ExportJSON</a>(arg0:&nbsp;capsule)&nbsp;-&gt;&nbsp;str<br>
+&nbsp;<br>
+Export&nbsp;the&nbsp;simulation&nbsp;to&nbsp;json&nbsp;data.</span></dd></dl>
+ <dl><dt><a name="-Initialize"><strong>Initialize</strong></a>(...)<span class="grey"><span class="heading-text"> method of builtins.PyCapsule instance</span></span></dt><dd><span class="code"><a href="#-Initialize">Initialize</a>()&nbsp;-&gt;&nbsp;None<br>
+&nbsp;<br>
+Initialize&nbsp;the&nbsp;library.</span></dd></dl>
+ <dl><dt><a name="-TickPreSimulation"><strong>TickPreSimulation</strong></a>(...)<span class="grey"><span class="heading-text"> method of builtins.PyCapsule instance</span></span></dt><dd><span class="code"><a href="#-TickPreSimulation">TickPreSimulation</a>(arg0:&nbsp;capsule,&nbsp;arg1:&nbsp;SimulationInterface.<a href="#SimulationData">SimulationData</a>)&nbsp;-&gt;&nbsp;list[SimulationInterface.<a href="#SimulationEvent">SimulationEvent</a>]<br>
+&nbsp;<br>
+Tick&nbsp;on&nbsp;the&nbsp;pre-simulation&nbsp;phase.</span></dd></dl>
+ <dl><dt><a name="-TickSimulation"><strong>TickSimulation</strong></a>(...)<span class="grey"><span class="heading-text"> method of builtins.PyCapsule instance</span></span></dt><dd><span class="code"><a href="#-TickSimulation">TickSimulation</a>(arg0:&nbsp;capsule,&nbsp;arg1:&nbsp;SimulationInterface.<a href="#SimulationData">SimulationData</a>,&nbsp;arg2:&nbsp;int)&nbsp;-&gt;&nbsp;list[SimulationInterface.<a href="#SimulationEvent">SimulationEvent</a>]<br>
+&nbsp;<br>
+Tick&nbsp;on&nbsp;the&nbsp;simulation&nbsp;phase.</span></dd></dl>
+</td></tr></table>
+</body></html>
