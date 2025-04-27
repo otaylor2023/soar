@@ -67,7 +67,7 @@ config = (
         sgd_minibatch_size=128,
         num_sgd_iter=20,
     )
-    .resources(num_gpus=0)
+    .resources(num_gpus=1)
     .callbacks(FlagFrenzyCallbacks)
     .to_dict()
 )
