@@ -1,0 +1,2175 @@
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168708.0, -614324.0, 0.0)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.138
+  - pos_y: 0.042
+  - ammo_remaining: 0.040
+  - is_alive: 0.040
+  - target_index: 0.033
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (237958.7, 274350.7, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.060
+  - team_legacy: 0.060
+  - domain_sea: 0.022
+  - vel_y: 0.017
+  - entity_index: 0.012
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204552.3, -868942.6, 0.0)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.043
+  - pos_y: 0.036
+  - entity_index: 0.032
+  - ammo_remaining: 0.030
+  - target_index: 0.019
+agent_action: {'action_type': 2, 'params': array([ 1.,  1., -1., -1., -1.,  1., -1., -1.,  1.,  1.], dtype=float32)}
+agent attribution from agent: Decision: RTB (confidence: 0.98)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168708.0, -614324.0, 0.0)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.138
+  - pos_y: 0.042
+  - ammo_remaining: 0.040
+  - is_alive: 0.040
+  - target_index: 0.033
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (237958.7, 274350.7, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.060
+  - team_legacy: 0.060
+  - domain_sea: 0.022
+  - vel_y: 0.017
+  - entity_index: 0.012
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204552.3, -868942.6, 0.0)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.043
+  - pos_y: 0.036
+  - entity_index: 0.032
+  - ammo_remaining: 0.030
+  - target_index: 0.019
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168641.1, -614260.7, 7.9)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (238617.4, 271736.6, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204515.5, -868857.9, 3.4)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+agent_action: {'action_type': 0, 'params': array([-1.       ,  0.8649684, -1.       , -1.       ,  1.       ,
+       -1.       ,  1.       , -1.       , -1.       ,  1.       ],
+      dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168641.1, -614260.7, 7.9)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (238617.4, 271736.6, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204515.5, -868857.9, 3.4)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168574.0, -614197.3, 15.9)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (239277.1, 269118.2, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204478.7, -868772.9, 6.8)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+agent_action: {'action_type': 0, 'params': array([ 1., -1., -1.,  1., -1., -1., -1.,  1.,  1., -1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168574.0, -614197.3, 15.9)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (239277.1, 269118.2, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204478.7, -868772.9, 6.8)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168507.0, -614134.0, 23.9)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (239936.8, 266499.9, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204441.9, -868688.1, 10.2)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+agent_action: {'action_type': 0, 'params': array([ 1., -1., -1., -1., -1., -1., -1.,  1.,  1., -1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168507.0, -614134.0, 23.9)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (239936.8, 266499.9, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204441.9, -868688.1, 10.2)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168439.9, -614070.6, 31.8)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (240596.6, 263881.6, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204405.1, -868603.1, 13.6)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+agent_action: {'action_type': 0, 'params': array([-1., -1., -1., -1., -1.,  1., -1.,  1., -1.,  1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168439.9, -614070.6, 31.8)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (240596.6, 263881.6, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204405.1, -868603.1, 13.6)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168372.9, -614007.3, 39.8)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (241256.3, 261263.3, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204368.3, -868518.2, 17.0)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+agent_action: {'action_type': 0, 'params': array([ 1., -1.,  1., -1.,  1., -1.,  1., -1.,  1.,  1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168372.9, -614007.3, 39.8)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (241256.3, 261263.3, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204368.3, -868518.2, 17.0)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168305.8, -613943.9, 47.7)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (241916.0, 258645.0, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204331.5, -868433.3, 20.4)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+agent_action: {'action_type': 0, 'params': array([-1., -1., -1.,  1.,  1., -1., -1.,  1., -1., -1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168305.8, -613943.9, 47.7)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (241916.0, 258645.0, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204331.5, -868433.3, 20.4)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168238.8, -613880.4, 55.7)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (242575.7, 256026.8, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204294.7, -868348.4, 23.8)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+agent_action: {'action_type': 0, 'params': array([-1.        , -1.        ,  1.        ,  1.        ,  1.        ,
+       -1.        , -1.        ,  0.52353394,  1.        , -1.        ],
+      dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168238.8, -613880.4, 55.7)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (242575.7, 256026.8, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204294.7, -868348.4, 23.8)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168171.7, -613817.1, 63.7)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (243235.4, 253408.5, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204257.8, -868263.5, 27.2)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+agent_action: {'action_type': 2, 'params': array([-1.        , -0.21614385, -1.        ,  1.        , -1.        ,
+       -1.        ,  1.        , -1.        , -1.        , -1.        ],
+      dtype=float32)}
+agent attribution from agent: Decision: RTB (confidence: 0.07)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168171.7, -613817.1, 63.7)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (243235.4, 253408.5, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204257.8, -868263.5, 27.2)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168104.7, -613753.8, 71.6)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (243895.1, 250790.3, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204221.0, -868178.6, 30.6)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+agent_action: {'action_type': 0, 'params': array([-1.,  1.,  1., -1., -1., -1., -1.,  1., -1.,  1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168104.7, -613753.8, 71.6)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (243895.1, 250790.3, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204221.0, -868178.6, 30.6)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168037.7, -613690.3, 79.6)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (244554.8, 248172.0, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204184.2, -868093.8, 34.0)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+agent_action: {'action_type': 0, 'params': array([-1.        , -1.        ,  1.        ,  1.        ,  0.64373255,
+       -1.        ,  1.        ,  1.        ,  1.        , -1.        ],
+      dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (168037.7, -613690.3, 79.6)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (244554.8, 248172.0, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204184.2, -868093.8, 34.0)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (167970.6, -613626.9, 87.5)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (245214.6, 245553.8, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204147.4, -868008.8, 37.4)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+agent_action: {'action_type': 0, 'params': array([-1.      , -1.      ,  1.      , -1.      ,  1.      , -0.735564,
+       -1.      ,  1.      ,  1.      ,  1.      ], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 7:
+Basic Information:
+  Entity ID: 7
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (167970.6, -613626.9, 87.5)
+  Rotation: (0.04, -0.02, 0.93, 0.37)
+  Velocity: (-6.7, 6.3, 0.8)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.480
+  - pos_y: 0.488
+  - target_index: 0.422
+  - is_alive: 0.393
+  - ammo_remaining: 0.321
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (245214.6, 245553.8, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - team_legacy: 0.758
+  - priority: 0.756
+  - vel_y: 0.185
+  - domain_sea: 0.115
+  - target_index: 0.066
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204147.4, -868008.8, 37.4)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.334
+  - pos_y: 0.261
+  - ammo_remaining: 0.198
+  - target_index: 0.117
+  - entity_index: 0.081
+Replay complete after 12 steps with total reward: 0.18600000000000005
+Sim Simulation library initialized succesfully!
+Created new simulation Standalone
+Destroying simulation Standalone
+Created new simulation Standalone
+Destroying simulation Standalone

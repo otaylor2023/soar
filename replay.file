@@ -1,0 +1,2174 @@
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-174804.1, -781871.8, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.142
+  - domain_sea: 0.071
+  - pos_y: 0.055
+  - is_alive: 0.042
+  - target_index: 0.036
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (232398.5, 293512.7, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.065
+  - priority: 0.064
+  - domain_sea: 0.022
+  - entity_index: 0.013
+  - vel_y: 0.009
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204552.3, -868942.6, 0.0)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.044
+  - pos_y: 0.036
+  - entity_index: 0.034
+  - ammo_remaining: 0.029
+  - target_index: 0.019
+agent_action: {'action_type': 2, 'params': array([ 1.       ,  1.       ,  1.       ,  1.       ,  1.       ,
+       -0.8876594,  1.       , -1.       , -1.       ,  1.       ],
+      dtype=float32)}
+agent attribution from agent: Decision: RTB (confidence: 1.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-174804.1, -781871.8, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.142
+  - domain_sea: 0.071
+  - pos_y: 0.055
+  - is_alive: 0.042
+  - target_index: 0.036
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (232398.5, 293512.7, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.065
+  - priority: 0.064
+  - domain_sea: 0.022
+  - entity_index: 0.013
+  - vel_y: 0.009
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204552.3, -868942.6, 0.0)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.044
+  - pos_y: 0.036
+  - entity_index: 0.034
+  - ammo_remaining: 0.029
+  - target_index: 0.019
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-174154.3, -779255.6, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.633
+  - domain_sea: 0.613
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (234373.4, 292209.1, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204515.5, -868857.9, 3.4)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.118
+  - entity_index: 0.099
+agent_action: {'action_type': 0, 'params': array([-1.        ,  1.        , -1.        ,  1.        ,  1.        ,
+       -1.        , -1.        , -1.        ,  1.        , -0.21252233],
+      dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-174154.3, -779255.6, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.633
+  - domain_sea: 0.613
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (234373.4, 292209.1, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204515.5, -868857.9, 3.4)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.118
+  - entity_index: 0.099
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-173503.5, -776635.0, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.631
+  - domain_sea: 0.614
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (236351.5, 290903.3, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204478.7, -868772.9, 6.8)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.099
+agent_action: {'action_type': 0, 'params': array([ 1.,  1.,  1., -1., -1.,  1., -1.,  1.,  1.,  1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-173503.5, -776635.0, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.631
+  - domain_sea: 0.614
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (236351.5, 290903.3, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204478.7, -868772.9, 6.8)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.099
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-172852.7, -774014.5, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.629
+  - domain_sea: 0.614
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (238329.7, 289597.6, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204441.9, -868688.1, 10.2)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.099
+agent_action: {'action_type': 0, 'params': array([-1.,  1.,  1., -1., -1.,  1., -1., -1.,  1., -1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-172852.7, -774014.5, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.629
+  - domain_sea: 0.614
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (238329.7, 289597.6, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204441.9, -868688.1, 10.2)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.099
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-172201.9, -771394.1, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.627
+  - domain_sea: 0.614
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (240307.7, 288291.9, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204405.1, -868603.1, 13.6)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.099
+agent_action: {'action_type': 0, 'params': array([-1.,  1.,  1.,  1.,  1., -1.,  1., -1., -1.,  1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-172201.9, -771394.1, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.627
+  - domain_sea: 0.614
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (240307.7, 288291.9, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204405.1, -868603.1, 13.6)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.099
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-171551.0, -768773.5, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.625
+  - domain_sea: 0.614
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (242285.8, 286986.2, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204368.3, -868518.2, 17.0)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.099
+agent_action: {'action_type': 0, 'params': array([-1., -1., -1.,  1., -1., -1.,  1., -1.,  1.,  1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-171551.0, -768773.5, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.625
+  - domain_sea: 0.614
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (242285.8, 286986.2, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204368.3, -868518.2, 17.0)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.099
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-170900.3, -766153.1, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.623
+  - domain_sea: 0.614
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (244263.8, 285680.6, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204331.5, -868433.3, 20.4)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.099
+agent_action: {'action_type': 0, 'params': array([ 1.       , -1.       , -1.       , -1.       , -1.       ,
+        0.7785511,  1.       ,  1.       ,  1.       ,  0.5874778],
+      dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-170900.3, -766153.1, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.623
+  - domain_sea: 0.614
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (244263.8, 285680.6, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204331.5, -868433.3, 20.4)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.099
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-170249.4, -763532.6, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.621
+  - domain_sea: 0.614
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (246241.8, 284374.9, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204294.7, -868348.4, 23.8)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.099
+agent_action: {'action_type': 0, 'params': array([-1.,  1., -1.,  1.,  1.,  1.,  1., -1.,  1.,  1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-170249.4, -763532.6, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.523
+  - pos_y: 0.621
+  - domain_sea: 0.614
+  - target_index: 0.443
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (246241.8, 284374.9, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204294.7, -868348.4, 23.8)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.339
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.099
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-169598.6, -760912.1, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.524
+  - pos_y: 0.619
+  - domain_sea: 0.614
+  - target_index: 0.444
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (248219.8, 283069.3, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204257.8, -868263.5, 27.2)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.340
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.100
+agent_action: {'action_type': 0, 'params': array([-1., -1.,  1., -1., -1.,  1., -1., -1.,  1., -1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-169598.6, -760912.1, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.524
+  - pos_y: 0.619
+  - domain_sea: 0.614
+  - target_index: 0.444
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (248219.8, 283069.3, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204257.8, -868263.5, 27.2)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.340
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.100
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-168947.8, -758291.6, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.524
+  - pos_y: 0.617
+  - domain_sea: 0.614
+  - target_index: 0.444
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (250197.8, 281763.7, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204221.0, -868178.6, 30.6)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.340
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.100
+agent_action: {'action_type': 0, 'params': array([-1.,  1.,  1.,  1., -1.,  1., -1.,  1., -1., -1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-168947.8, -758291.6, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.524
+  - pos_y: 0.617
+  - domain_sea: 0.614
+  - target_index: 0.444
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (250197.8, 281763.7, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204221.0, -868178.6, 30.6)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.340
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.100
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-168297.0, -755671.2, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.524
+  - pos_y: 0.615
+  - domain_sea: 0.614
+  - target_index: 0.444
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (252175.8, 280458.0, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204184.2, -868093.8, 34.0)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.340
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.100
+agent_action: {'action_type': 0, 'params': array([ 0.5297302 , -1.        ,  1.        ,  1.        ,  1.        ,
+        0.42762005,  1.        , -1.        , -1.        ,  1.        ],
+      dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-168297.0, -755671.2, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.524
+  - pos_y: 0.615
+  - domain_sea: 0.614
+  - target_index: 0.444
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (252175.8, 280458.0, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204184.2, -868093.8, 34.0)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.340
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.100
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-167646.2, -753050.8, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.524
+  - domain_sea: 0.614
+  - pos_y: 0.613
+  - target_index: 0.444
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (254153.8, 279152.4, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204147.4, -868008.8, 37.4)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.340
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.100
+agent_action: {'action_type': 0, 'params': array([-1.,  1., -1.,  1.,  1., -1., -1.,  1., -1.,  1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 10:
+Basic Information:
+  Entity ID: 10
+  Name: KJ-2000
+  Faction: Faction.Dynasty
+  Position: (-167646.2, -753050.8, 15000.0)
+  Rotation: (0.00, 0.00, 0.62, 0.79)
+  Velocity: (65.1, 262.0, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 1.524
+  - domain_sea: 0.614
+  - pos_y: 0.613
+  - target_index: 0.444
+  - is_alive: 0.414
+
+Entity 32:
+Basic Information:
+  Entity ID: 32
+  Name: AWACS
+  Faction: Faction.Legacy
+  Position: (254153.8, 279152.4, 12000.0)
+  Rotation: (-0.00, 0.00, -0.29, 0.96)
+  Velocity: (197.8, -130.6, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: False
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 0
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - E-7
+    - EC-37B
+
+  - team_legacy: 0.794
+  - priority: 0.786
+  - domain_sea: 0.112
+  - vel_y: 0.095
+  - target_index: 0.065
+
+Entity 8:
+Basic Information:
+  Entity ID: 8
+  Name: Renhai
+  Faction: Faction.Dynasty
+  Position: (204147.4, -868008.8, 37.4)
+  Rotation: (0.02, -0.01, 0.84, 0.55)
+  Velocity: (-3.7, 8.5, 0.3)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 48
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.340
+  - pos_y: 0.261
+  - ammo_remaining: 0.197
+  - target_index: 0.119
+  - entity_index: 0.100
+Replay complete after 12 steps with total reward: 0.18600000000000005
+Sim Simulation library initialized succesfully!
+Created new simulation Standalone
+Destroying simulation Standalone
+Created new simulation Standalone
+Destroying simulation Standalone

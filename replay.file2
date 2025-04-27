@@ -1,0 +1,2340 @@
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (142673.6, -707403.9, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 0.140
+  - domain_sea: 0.070
+  - pos_y: 0.050
+  - is_alive: 0.041
+  - target_index: 0.035
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138507.9, -732735.9, 0.0)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.040
+  - pos_y: 0.019
+  - target_domain_land: 0.019
+  - target_domain_air: 0.018
+  - target_domain_sea: 0.016
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (237958.7, 274350.7, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.048
+  - team_legacy: 0.047
+  - entity_index: 0.034
+  - target_domain_sea: 0.022
+  - target_domain_air: 0.020
+agent_action: {'action_type': 2, 'params': array([-1.,  1.,  1., -1., -1., -1.,  1., -1., -1.,  1.], dtype=float32)}
+agent attribution from agent: Decision: RTB (confidence: 1.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (142673.6, -707403.9, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 0.140
+  - domain_sea: 0.070
+  - pos_y: 0.050
+  - is_alive: 0.041
+  - target_index: 0.035
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138507.9, -732735.9, 0.0)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.040
+  - pos_y: 0.019
+  - target_domain_land: 0.019
+  - target_domain_air: 0.018
+  - target_domain_sea: 0.016
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (237958.7, 274350.7, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.048
+  - team_legacy: 0.047
+  - entity_index: 0.034
+  - target_domain_sea: 0.022
+  - target_domain_air: 0.020
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (140875.6, -705328.9, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.571
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138473.3, -732650.4, 5.4)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.150
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (238617.4, 271736.6, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+agent_action: {'action_type': 0, 'params': array([ 1.,  1., -1., -1.,  1.,  1., -1.,  1.,  1., -1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (140875.6, -705328.9, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.571
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138473.3, -732650.4, 5.4)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.150
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (238617.4, 271736.6, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (139074.7, -703250.4, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.569
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138438.7, -732564.7, 10.8)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.150
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (239277.1, 269118.2, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+agent_action: {'action_type': 0, 'params': array([ 1.,  1.,  1., -1., -1.,  1.,  1., -1.,  1.,  1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (139074.7, -703250.4, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.569
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138438.7, -732564.7, 10.8)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.150
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (239277.1, 269118.2, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (137273.7, -701172.0, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.568
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138404.0, -732478.9, 16.2)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.150
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (239936.8, 266499.9, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+agent_action: {'action_type': 0, 'params': array([-1.        ,  1.        , -1.        , -1.        , -0.16854537,
+       -1.        , -1.        ,  1.        , -1.        , -1.        ],
+      dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (137273.7, -701172.0, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.568
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138404.0, -732478.9, 16.2)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.150
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (239936.8, 266499.9, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (135472.8, -699093.6, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.566
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138369.4, -732393.2, 21.6)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (240596.6, 263881.6, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+agent_action: {'action_type': 0, 'params': array([-1., -1., -1.,  1., -1., -1.,  1., -1.,  1., -1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (135472.8, -699093.6, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.566
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138369.4, -732393.2, 21.6)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (240596.6, 263881.6, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (133672.0, -697015.2, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.564
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138334.7, -732307.6, 27.0)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (241256.3, 261263.3, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+agent_action: {'action_type': 0, 'params': array([ 1.,  1., -1.,  1.,  1., -1., -1.,  1., -1., -1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (133672.0, -697015.2, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.564
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138334.7, -732307.6, 27.0)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (241256.3, 261263.3, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (131871.0, -694936.7, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.563
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138300.1, -732221.9, 32.4)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (241916.0, 258645.0, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+agent_action: {'action_type': 0, 'params': array([-1.        ,  1.        ,  0.44197237,  1.        ,  1.        ,
+       -1.        , -1.        , -1.        ,  1.        , -1.        ],
+      dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (131871.0, -694936.7, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.563
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138300.1, -732221.9, 32.4)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (241916.0, 258645.0, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (130070.1, -692858.4, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.561
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138265.4, -732136.2, 37.8)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (242575.7, 256026.8, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+agent_action: {'action_type': 0, 'params': array([-1.,  1., -1., -1., -1.,  1.,  1., -1., -1.,  1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (130070.1, -692858.4, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.561
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138265.4, -732136.2, 37.8)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (242575.7, 256026.8, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (128269.2, -690779.9, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.559
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138230.8, -732050.4, 43.2)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (243235.4, 253408.5, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+agent_action: {'action_type': 0, 'params': array([ 1.        ,  0.90645194, -1.        ,  0.6821929 , -0.13980669,
+       -1.        ,  1.        , -1.        ,  1.        , -1.        ],
+      dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (128269.2, -690779.9, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.559
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138230.8, -732050.4, 43.2)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (243235.4, 253408.5, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (126468.4, -688701.6, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.557
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138196.1, -731964.8, 48.6)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (243895.1, 250790.3, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+agent_action: {'action_type': 0, 'params': array([ 1.,  1.,  1., -1.,  1., -1.,  1., -1., -1., -1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (126468.4, -688701.6, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.557
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138196.1, -731964.8, 48.6)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (243895.1, 250790.3, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (124667.5, -686623.2, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.556
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138161.5, -731879.0, 54.0)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (244554.8, 248172.0, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+agent_action: {'action_type': 0, 'params': array([-1.,  1.,  1.,  1., -1., -1.,  1.,  1.,  1., -1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (124667.5, -686623.2, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.556
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138161.5, -731879.0, 54.0)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (244554.8, 248172.0, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+player_action: {'action_type': 0, 'params': array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])}
+player attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (122866.6, -684544.8, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.554
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138126.9, -731793.3, 59.4)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (245214.6, 245553.8, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+agent_action: {'action_type': 0, 'params': array([-1.,  1.,  1., -1., -1.,  1., -1.,  1.,  1., -1.], dtype=float32)}
+agent attribution from agent: Decision: NoOp (confidence: 0.00)
+
+Most influential entities:
+
+Entity 44:
+Basic Information:
+  Entity ID: 44
+  Name: SpiritDragon
+  Faction: Faction.Dynasty
+  Position: (122866.6, -684544.8, 15000.0)
+  Rotation: (0.00, 0.00, 0.91, 0.42)
+  Velocity: (-180.1, 207.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 6
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+    - DynastySquadron
+
+  - team_dynasty: 1.494
+  - domain_sea: 0.593
+  - pos_y: 0.554
+  - target_index: 0.437
+  - is_alive: 0.406
+
+Entity 6:
+Basic Information:
+  Entity ID: 6
+  Name: Luyang_III
+  Faction: Faction.Dynasty
+  Position: (138126.9, -731793.3, 59.4)
+  Rotation: (0.02, -0.02, 0.83, 0.56)
+  Velocity: (-3.5, 8.6, 0.5)
+  Domain: EntityDomain.Sea
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Unit Specific Properties:
+  Health: 100.0
+
+  - team_dynasty: 0.412
+  - target_domain_land: 0.160
+  - pos_y: 0.149
+  - target_domain_air: 0.125
+  - target_domain_sea: 0.100
+
+Entity 35:
+Basic Information:
+  Entity ID: 35
+  Name: B1
+  Faction: Faction.Legacy
+  Position: (245214.6, 245553.8, 15000.0)
+  Rotation: (-0.00, 0.00, -0.61, 0.79)
+  Velocity: (66.0, -261.8, 0.0)
+  Domain: EntityDomain.Air
+
+Controllable Entity Properties:
+  Is Controllable: True
+  Current Maneuver: ControllableEntityManouver.NoManouver
+  Ammo: 24
+  Engagement Level: -1
+  Weapons Usage Mode: -1
+  Has Reached Base: False
+  Is Alive: True
+
+Group Entity Properties:
+  Member Entities:
+    - LegacySquadron
+    - LegacySquadron
+
+  - priority: 0.575
+  - team_legacy: 0.571
+  - target_domain_land: 0.388
+  - target_domain_air: 0.385
+  - target_domain_sea: 0.351
+Replay complete after 12 steps with total reward: 0.18600000000000005
+Sim Simulation library initialized succesfully!
+Created new simulation Standalone
+Destroying simulation Standalone
+Created new simulation Standalone
+Destroying simulation Standalone
