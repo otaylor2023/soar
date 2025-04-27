@@ -24,6 +24,9 @@ def main():
     # Load PPO from checkpoint
     print(f"Loading PPO agent from checkpoint: {args.checkpoint_path}")
     algo = PPO.from_checkpoint(args.checkpoint_path)
+    enable_simulation = True
+    # Enable attribution on the model
+    algo.get_policy().model.set_attribution_enabled(enable_simulation)
 
     # Create environment manually
     env = env_creator({})
@@ -36,19 +39,20 @@ def main():
 
         while not done:
             # RLlib expects dict obs, convert if needed
-            action = algo.compute_single_action(obs)
+            action = algo.compute_single_action(obs, explore=False)
             policy = algo.get_policy()
             model = policy.model
             print(f"action: {action}")
             # print(f"feature importance: {algo.get_last_attribution()}")
             attribution_dict = model.get_last_attribution()
-            # print(f"attribution_dict: {list(attribution_dict.keys())}")
-            # print(f"action['action_type']: {action['action_type']}")
-            selected_attribution_list = attribution_dict[action["action_type"]]
+            if enable_simulation:
+                # print(f"attribution_dict: {list(attribution_dict.keys())}")
+                # print(f"action['action_type']: {action['action_type']}")
+                selected_attribution_list = attribution_dict[action["action_type"]]
             # print(f"selected_attribution_list: {selected_attribution_list}")
-            print(f"printing {len(selected_attribution_list)} attributions for actions taken")
-            for i in range(len(selected_attribution_list)):
-                print(model.format_explanation(selected_attribution_list[i]))
+                print(f"printing {len(selected_attribution_list)} attributions for actions taken")
+                for i in range(len(selected_attribution_list)):
+                    print(model.format_explanation(selected_attribution_list[i]))
 
             obs, reward, done, truncated, info = env.step(action)
             total_reward += reward

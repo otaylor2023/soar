@@ -1,0 +1,41 @@
+Failure # 1 (occurred at 2025-04-27_08-22-36)
+The actor died because of an error raised in its creation task, [36mray::PPO.__init__()[39m (pid=875224, ip=10.19.89.17, actor_id=9bb879d93073be7ccd2923f001000000, repr=PPO)
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/evaluation/worker_set.py", line 229, in _setup
+    self.add_workers(
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/evaluation/worker_set.py", line 682, in add_workers
+    raise result.get()
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/utils/actor_manager.py", line 497, in _fetch_result
+    result = ray.get(r)
+ray.exceptions.RayActorError: The actor died because of an error raised in its creation task, [36mray::RolloutWorker.__init__()[39m (pid=875470, ip=10.19.89.17, actor_id=61a632a505a0b757df77551301000000, repr=<ray.rllib.evaluation.rollout_worker.RolloutWorker object at 0x766973e2b400>)
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/evaluation/rollout_worker.py", line 535, in __init__
+    self._update_policy_map(policy_dict=self.policy_dict)
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/evaluation/rollout_worker.py", line 1743, in _update_policy_map
+    self._build_policy_map(
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/evaluation/rollout_worker.py", line 1854, in _build_policy_map
+    new_policy = create_policy_for_framework(
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/utils/policy.py", line 141, in create_policy_for_framework
+    return policy_class(observation_space, action_space, merged_config)
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/algorithms/ppo/ppo_torch_policy.py", line 49, in __init__
+    TorchPolicyV2.__init__(
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/policy/torch_policy_v2.py", line 191, in __init__
+    self.exploration = self._create_exploration()
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/policy/policy.py", line 1294, in _create_exploration
+    exploration = from_config(
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/utils/from_config.py", line 197, in from_config
+    object_ = constructor(*ctor_args, **ctor_kwargs)
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/utils/exploration/curiosity.py", line 105, in __init__
+    raise ValueError(
+ValueError: Only (Multi)Discrete action spaces supported for Curiosity so far!
+
+During handling of the above exception, another exception occurred:
+
+[36mray::PPO.__init__()[39m (pid=875224, ip=10.19.89.17, actor_id=9bb879d93073be7ccd2923f001000000, repr=PPO)
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 533, in __init__
+    super().__init__(
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/tune/trainable/trainable.py", line 161, in __init__
+    self.setup(copy.deepcopy(self.config))
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/algorithms/algorithm.py", line 631, in setup
+    self.workers = WorkerSet(
+  File "/home/hackathon/doc/soar/venv/lib/python3.9/site-packages/ray/rllib/evaluation/worker_set.py", line 181, in __init__
+    raise e.args[0].args[2]
+ValueError: Only (Multi)Discrete action spaces supported for Curiosity so far!

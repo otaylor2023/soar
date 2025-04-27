@@ -44,13 +44,14 @@ class CustomModel(TorchModelV2, nn.Module):
 
         self.last_obs = None
         self.last_attribution = None
+        self.enable_attribution = model_config.get("enable_attribution", False)
+        
 
-        # TODO: Don't hardcode!
-        self.max_entities = 100
-        self.entity_feat_dim = 26
-        self.mission_dim = 7
-
-        self.action_dim_param = 10
+        # Load dimensions from model_config if available
+        self.max_entities = model_config.get("max_entities", 100)
+        self.entity_feat_dim = model_config.get("entity_feat_dim", 26)
+        self.mission_dim = model_config.get("mission_dim", 7)
+        self.action_dim_param = model_config.get("action_dim_param", 10)
 
         # Entity encoder
         self.entity_encoder = nn.Sequential(
@@ -342,16 +343,18 @@ class CustomModel(TorchModelV2, nn.Module):
         # print(f"logits: {logits.shape}")
         # Compute attribution for this forward pass
         # We'll do this during both training and inference
-        try:
-            # Temporarily enable gradients for attribution computation
-            with torch.set_grad_enabled(True):
-                attribute_dict = {}
-                for i in range(logits.shape[1]):
-                    attribute_dict[i] = self._compute_batch_attribution(logits, mu, entities, chosen_action=i)                
-                self.last_attribution = attribute_dict
-        except Exception as e:
-            print(f"Warning: Attribution computation failed in forward pass: {e}")
-            self.last_attribution = None
+        if self.enable_attribution:
+            try:
+                # Temporarily enable gradients for attribution computation
+                with torch.set_grad_enabled(True):
+                    attribute_dict = {}
+                    for i in range(logits.shape[1]):
+                        attribute_dict[i] = self._compute_batch_attribution(logits, mu, entities, chosen_action=i)                
+                    self.last_attribution = attribute_dict
+            except Exception as e:
+                print(f"Warning: Attribution computation failed in forward pass: {e}")
+                self.last_attribution = None
+        print(f"logits: {logits}")
         output = torch.cat([logits, params], dim=-1)
         # print(f"output: {output}")
         return output, state
@@ -400,3 +403,8 @@ class CustomModel(TorchModelV2, nn.Module):
         value = self._value_branch(self._features)
         self._last_value = value.squeeze(1)
         return self._last_value
+
+    def set_attribution_enabled(self, enabled: bool):
+        """Enable or disable attribution computation."""
+        self.enable_attribution = enabled
+        return self
