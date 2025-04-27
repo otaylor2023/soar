@@ -117,8 +117,8 @@ class CustomModel(TorchModelV2, nn.Module):
         """
         Compute integrated gradients for a given input and target.
         """
-        print("\nStarting integrated gradients computation:")
-        print(f"Input tensor range: min={input_tensor.min().item():.6f}, max={input_tensor.max().item():.6f}")
+        # print("\nStarting integrated gradients computation:")
+        # print(f"Input tensor range: min={input_tensor.min().item():.6f}, max={input_tensor.max().item():.6f}")
         
         # Make sure we're working with fresh tensors that we can modify
         input_tensor = input_tensor.detach().clone()
@@ -169,7 +169,7 @@ class CustomModel(TorchModelV2, nn.Module):
         
         # Average gradients and multiply by input difference
         attribution = ((input_tensor - baseline) * integrated_gradients) / steps
-        print(f"\nAttribution stats: mean={attribution.mean().item():.6f}, std={attribution.std().item():.6f}")
+        # print(f"\nAttribution stats: mean={attribution.mean().item():.6f}, std={attribution.std().item():.6f}")
         
         return attribution.detach()
 
@@ -210,11 +210,11 @@ class CustomModel(TorchModelV2, nn.Module):
         logits = self.action_type_head(features)
         return logits
 
-    def _compute_batch_attribution(self, logits: torch.Tensor, mu: torch.Tensor, entities: torch.Tensor) -> List[Dict]:
+    def _compute_batch_attribution(self, logits: torch.Tensor, mu: torch.Tensor, entities: torch.Tensor, chosen_action: int) -> List[Dict]:
         """
         Compute attributions for a batch of inputs.
         """
-        print("\nStarting batch attribution computation:")
+        # print(f"\nStarting batch attribution computation for {logits.shape[0]} samples")
         batch_attributions = []
         
         for i in range(logits.shape[0]):
@@ -222,7 +222,8 @@ class CustomModel(TorchModelV2, nn.Module):
                 # Get the predicted action type for this sample
                 sample_logits = logits[i]
                 sample_mu = mu[i]
-                action_type = torch.argmax(sample_logits).item()
+                action_type = chosen_action
+                # print(f"action logits: {sample_logits}")
                 # Compute attribution
                 entities_tensor = entities[i]
                 baseline = torch.zeros_like(entities_tensor)
@@ -235,7 +236,7 @@ class CustomModel(TorchModelV2, nn.Module):
                     steps=20,
                     batch_num=i
                 )
-                
+                # print(f"sample_logits: {sample_logits} for action type: {action_type}")
                 # Create attribution dictionary
                 attribution = {
                     "action_type": {
@@ -250,8 +251,6 @@ class CustomModel(TorchModelV2, nn.Module):
                 # print(f"Processing batch {i} with entity_id_list: {self.entity_id_list[i]}")
                 for j in range(min(self.max_entities, len(self.entity_id_list[i]))):
                     try:
-                        if j >= len(self.entity_id_list[i]):
-                            continue
                             
                         entity_id = self.entity_id_list[i][j].item()
                         if entity_id == 0:  # Skip empty entities
@@ -326,27 +325,35 @@ class CustomModel(TorchModelV2, nn.Module):
         std = torch.exp(log_std)
         params = torch.cat([mu, std], dim=1)
 
+        # print(f"logits before mask: {logits}")
         # Mask out "engage target" if no valid targets
         if engage_mask is not None:
             if engage_mask.dim() == 1:
                 engage_mask = engage_mask.unsqueeze(0)
+            # print(f"engage_mask: {engage_mask}")
             engage_mask = engage_mask.view(engage_mask.shape[0], -1)
+            # print(f"engage_mask again: {engage_mask}")
             has_valid_targets = (engage_mask > 0.5).any(dim=1)
             mask_value = torch.tensor(-1e9, dtype=logits.dtype, device=logits.device)
             logits[:, 3] = torch.where(has_valid_targets, logits[:, 3], mask_value)
-
+            # print(f"has_valid_targets: {has_valid_targets}")
+            # print(f"logits masked to: {logits}")
+        
+        # print(f"logits: {logits.shape}")
         # Compute attribution for this forward pass
         # We'll do this during both training and inference
         try:
             # Temporarily enable gradients for attribution computation
             with torch.set_grad_enabled(True):
-                self.last_attribution = self._compute_batch_attribution(logits, mu, entities)
-                print(f"Last attribution: {self.format_explanation(self.last_attribution[0])}")
+                attribute_dict = {}
+                for i in range(logits.shape[1]):
+                    attribute_dict[i] = self._compute_batch_attribution(logits, mu, entities, chosen_action=i)                
+                self.last_attribution = attribute_dict
         except Exception as e:
             print(f"Warning: Attribution computation failed in forward pass: {e}")
             self.last_attribution = None
-
         output = torch.cat([logits, params], dim=-1)
+        # print(f"output: {output}")
         return output, state
 
     def get_last_attribution(self) -> Optional[Dict]:
